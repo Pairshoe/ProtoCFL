@@ -11,7 +11,7 @@ def visualize_features(features, image_path, random_seed=0):
     feature_embedding = TSNE(n_components=2, learning_rate='auto', 
                              init='random', perplexity=3, random_state=random_seed)\
                             .fit_transform(np.array(feature_data))
-    plt.figure(figsize=(16, 10))
+    plt.figure(figsize=(25, 30))
     sns.scatterplot(x=feature_embedding[:, 0],
                     y=feature_embedding[:, 1],
                     hue=feature_label,

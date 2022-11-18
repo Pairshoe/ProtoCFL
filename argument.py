@@ -10,7 +10,7 @@ def add_args():
     parser.add_argument('--gpu', type=int, default=0)
 
     # dataset settings
-    parser.add_argument('--dataset_name', type=str, default='cifar10')
+    parser.add_argument('--dataset_name', type=str, default='cifar100')
     parser.add_argument('--dataset_dir', type=str, default='~/datasets/')
     parser.add_argument('--train_data_idxs', type=list, default=range(5000))
     parser.add_argument('--test_data_idxs', type=list, default=range(1000))

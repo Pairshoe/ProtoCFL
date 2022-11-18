@@ -37,8 +37,8 @@ def partition(args, train_dataset, test_dataset):
     logging.debug(f"num_classes_disjoint_for_task: {num_classes_disjoint_for_task}.")
     logging.debug(f"num_classes_overlap_for_task: {num_classes_overlap_for_task}.")
 
-    num_classes_for_client = 2
-    num_classes_disjoint_for_client = 1
+    num_classes_for_client = int(0.2 * num_classes)
+    num_classes_disjoint_for_client = int(0.1 * num_classes)
     logging.debug(f"num_classes_for_client: {num_classes_for_client}.")
     logging.debug(f"num_classes_disjoint_for_client: {num_classes_disjoint_for_client}.")
     

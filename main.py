@@ -55,15 +55,22 @@ if __name__ == "__main__":
     num_clients = args.num_clients
     for client_id in range(num_clients):
         # create model
-        model = create_resnet18_client(args.pretrained)
+        if args.dataset_name == 'cifar10':
+            model = create_resnet18_client(pretained=args.pretrained, num_classes=10)
+        elif args.dataset_name == 'cifar100':
+            model = create_resnet18_client(pretained=args.pretrained, num_classes=100)
         client = Client(args, device, model)
         client.set_id(client_id)
         clients.append(client)
 
     # create server
     logging.info("Create Server.")
-    model = create_resnet18_server()
-    encoder = create_resnet18_client(args.pretrained)
+    if args.dataset_name == 'cifar10':
+        model = create_resnet18_server(num_classes=10)
+        encoder = create_resnet18_client(pretained=args.pretrained, num_classes=10)
+    elif args.dataset_name == 'cifar100':
+        model = create_resnet18_server(num_classes=100)
+        encoder = create_resnet18_client(pretained=args.pretrained, num_classes=100)
     server = Server(args, device, model, encoder)
 
     # start simulation
