@@ -1,0 +1,293 @@
+[[31;21mINFO[1;0m]11-18 12:42:18 - main.py[line:46]: Load Data.
+[[31;21mINFO[1;0m]11-18 12:42:18 - dataloader.py[line:11]: Dataset: cifar10.
+[[31;21mINFO[1;0m]11-18 12:42:22 - dataloader.py[line:16]: Data Partition.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:26]: num_tasks: 2.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:27]: num_clients: 12.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:35]: num_classes: 10.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:36]: num_classes_for_task: 10.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:37]: num_classes_disjoint_for_task: 4.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:38]: num_classes_overlap_for_task: 1.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:42]: num_classes_for_client: 2.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - datapartition.py[line:43]: num_classes_disjoint_for_client: 1.
+[[31;21mINFO[1;0m]11-18 12:42:22 - dataloader.py[line:21]: Data Loader.
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:23]: task 0 global: 3046
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:24]: task 0 global: 617
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 0: 1017
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 0: 221
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 1: 1003
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 1: 212
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 2: 1024
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 2: 203
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 3: 1038
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 3: 190
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 4: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 4: 193
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 5: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 5: 215
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 6: 1017
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 6: 221
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 7: 1003
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 7: 212
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 8: 1024
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 8: 203
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 9: 1038
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 9: 190
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 10: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 10: 193
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 0 client 11: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 0 client 11: 215
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:23]: task 1 global: 2959
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:24]: task 1 global: 576
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 0: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 0: 193
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 1: 974
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 1: 189
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 2: 948
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 2: 175
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 3: 980
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 3: 195
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 4: 1006
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 4: 208
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 5: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 5: 192
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 6: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 6: 193
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 7: 974
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 7: 189
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 8: 948
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 8: 175
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 9: 980
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 9: 195
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 10: 1006
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 10: 208
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:32]: task 1 client 11: 1005
+[[33;21mDEBUG[1;0m]11-18 12:42:22 - dataloader.py[line:33]: task 1 client 11: 192
+[[31;21mINFO[1;0m]11-18 12:42:22 - main.py[line:53]: Create Clients.
+[[31;21mINFO[1;0m]11-18 12:42:24 - main.py[line:64]: Create Server.
+[[31;21mINFO[1;0m]11-18 12:42:24 - main.py[line:72]: Start Task 0.
+[[31;21mINFO[1;0m]11-18 12:42:24 - runner.py[line:39]: Collect Features from Clients.
+[[33;21mDEBUG[1;0m]11-18 12:42:24 - runner.py[line:42]: Client 0 train_data size: 63 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:27 - runner.py[line:44]: Client 0 c_feature size: 1008.
+[[33;21mDEBUG[1;0m]11-18 12:42:27 - runner.py[line:42]: Client 1 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:28 - runner.py[line:44]: Client 1 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:42:28 - runner.py[line:42]: Client 2 train_data size: 64 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:28 - runner.py[line:44]: Client 2 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-18 12:42:28 - runner.py[line:42]: Client 3 train_data size: 64 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:28 - runner.py[line:44]: Client 3 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-18 12:42:28 - runner.py[line:42]: Client 4 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:29 - runner.py[line:44]: Client 4 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:42:29 - runner.py[line:42]: Client 5 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:29 - runner.py[line:44]: Client 5 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:42:29 - runner.py[line:42]: Client 6 train_data size: 63 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:29 - runner.py[line:44]: Client 6 c_feature size: 1008.
+[[33;21mDEBUG[1;0m]11-18 12:42:29 - runner.py[line:42]: Client 7 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:44]: Client 7 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:42]: Client 8 train_data size: 64 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:44]: Client 8 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:42]: Client 9 train_data size: 64 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:44]: Client 9 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:42]: Client 10 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:44]: Client 10 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:42:30 - runner.py[line:42]: Client 11 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:42:31 - runner.py[line:44]: Client 11 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:42:57 - pyplot.py[line:295]: Loaded backend agg version unknown.
+[[31;21mINFO[1;0m]11-18 12:42:58 - runner.py[line:51]: Pass Features to Server.
+[[31;21mINFO[1;0m]11-18 12:43:03 - runner.py[line:60]: Train on Server.
+[[31;21mINFO[1;0m]11-18 12:43:03 - server.py[line:92]: (Local Training Epoch: 0 	Loss: 1.529594)
+[[31;21mINFO[1;0m]11-18 12:43:04 - server.py[line:92]: (Local Training Epoch: 50 	Loss: 0.766369)
+[[31;21mINFO[1;0m]11-18 12:43:06 - server.py[line:92]: (Local Training Epoch: 100 	Loss: 0.512120)
+[[31;21mINFO[1;0m]11-18 12:43:07 - server.py[line:92]: (Local Training Epoch: 150 	Loss: 0.384676)
+[[31;21mINFO[1;0m]11-18 12:43:08 - server.py[line:92]: (Local Training Epoch: 200 	Loss: 0.308127)
+[[31;21mINFO[1;0m]11-18 12:43:10 - server.py[line:92]: (Local Training Epoch: 250 	Loss: 0.257152)
+[[31;21mINFO[1;0m]11-18 12:43:11 - server.py[line:92]: (Local Training Epoch: 300 	Loss: 0.220673)
+[[31;21mINFO[1;0m]11-18 12:43:13 - server.py[line:92]: (Local Training Epoch: 350 	Loss: 0.193639)
+[[31;21mINFO[1;0m]11-18 12:43:14 - server.py[line:92]: (Local Training Epoch: 400 	Loss: 0.172351)
+[[31;21mINFO[1;0m]11-18 12:43:15 - server.py[line:92]: (Local Training Epoch: 450 	Loss: 0.155445)
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:70]: Test on Server.
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:72]: Test on Task f0.
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f0.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 198 / 208 = 0.9519230769230769
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 38.53520661126822 / 208 = 0.18526541640032798
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f1.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 193 / 208 = 0.9278846153846154
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 55.74060244858265 / 208 = 0.2679836656181858
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f2.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 171 / 192 = 0.890625
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 85.34933349257335 / 192 = 0.44452777860715287
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f3.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 160 / 176 = 0.9090909090909091
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 49.33044798672199 / 176 = 0.2802866362881931
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f4.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 174 / 192 = 0.90625
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 75.3989155292511 / 192 = 0.3927026850481828
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f5.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 189 / 208 = 0.9086538461538461
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 97.3068163394928 / 208 = 0.46782123240140766
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f6.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 196 / 208 = 0.9423076923076923
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 43.93874494638294 / 208 = 0.21124396608837953
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f7.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 193 / 208 = 0.9278846153846154
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 55.742099571973085 / 208 = 0.26799086332679367
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f8.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 174 / 192 = 0.90625
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 73.9334067106247 / 192 = 0.38506982661783695
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f9.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 159 / 176 = 0.9034090909090909
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 51.849230606108904 / 176 = 0.2945979011710733
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f10.
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:127]: Test: Acc = 174 / 192 = 0.90625
+[[31;21mINFO[1;0m]11-18 12:43:17 - server.py[line:128]: Test: Loss = 75.39561070036143 / 192 = 0.3926854723977158
+[[31;21mINFO[1;0m]11-18 12:43:17 - runner.py[line:74]: Test on Client f11.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 189 / 208 = 0.9086538461538461
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 97.30346489325166 / 208 = 0.4678051196790945
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:72]: Test on Task f1.
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f0.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 174 / 192 = 0.90625
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 75.39883440732956 / 192 = 0.3927022625381748
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f1.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 83 / 176 = 0.4715909090909091
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 482.43668365478516 / 176 = 2.7411175207658247
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f2.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 0 / 160 = 0.0
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 691.0503616333008 / 160 = 4.31906476020813
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f3.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 0 / 192 = 0.0
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 641.4615707397461 / 192 = 3.3409456809361777
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f4.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 0 / 208 = 0.0
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 694.6220397949219 / 208 = 3.339529037475586
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f5.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 84 / 192 = 0.4375
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 357.7204780578613 / 192 = 1.8631274898846943
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f6.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 174 / 192 = 0.90625
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 75.34447573125362 / 192 = 0.39241914443361264
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f7.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 83 / 176 = 0.4715909090909091
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 484.6793098449707 / 176 = 2.7538597150282427
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f8.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 0 / 160 = 0.0
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 687.1011199951172 / 160 = 4.294381999969483
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f9.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 0 / 192 = 0.0
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 643.5246887207031 / 192 = 3.3516910870869956
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f10.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 0 / 208 = 0.0
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 694.6220397949219 / 208 = 3.339529037475586
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:74]: Test on Client f11.
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:127]: Test: Acc = 84 / 192 = 0.4375
+[[31;21mINFO[1;0m]11-18 12:43:18 - server.py[line:128]: Test: Loss = 357.72046852111816 / 192 = 1.863127440214157
+[[31;21mINFO[1;0m]11-18 12:43:18 - main.py[line:72]: Start Task 1.
+[[31;21mINFO[1;0m]11-18 12:43:18 - runner.py[line:39]: Collect Features from Clients.
+[[33;21mDEBUG[1;0m]11-18 12:43:18 - runner.py[line:42]: Client 0 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:18 - runner.py[line:44]: Client 0 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:43:18 - runner.py[line:42]: Client 1 train_data size: 60 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:19 - runner.py[line:44]: Client 1 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-18 12:43:19 - runner.py[line:42]: Client 2 train_data size: 59 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:19 - runner.py[line:44]: Client 2 c_feature size: 944.
+[[33;21mDEBUG[1;0m]11-18 12:43:19 - runner.py[line:42]: Client 3 train_data size: 61 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:19 - runner.py[line:44]: Client 3 c_feature size: 976.
+[[33;21mDEBUG[1;0m]11-18 12:43:19 - runner.py[line:42]: Client 4 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:20 - runner.py[line:44]: Client 4 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:43:20 - runner.py[line:42]: Client 5 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:20 - runner.py[line:44]: Client 5 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:43:20 - runner.py[line:42]: Client 6 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:20 - runner.py[line:44]: Client 6 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:43:20 - runner.py[line:42]: Client 7 train_data size: 60 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:44]: Client 7 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:42]: Client 8 train_data size: 59 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:44]: Client 8 c_feature size: 944.
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:42]: Client 9 train_data size: 61 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:44]: Client 9 c_feature size: 976.
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:42]: Client 10 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:44]: Client 10 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-18 12:43:21 - runner.py[line:42]: Client 11 train_data size: 62 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-18 12:43:22 - runner.py[line:44]: Client 11 c_feature size: 992.
+[[31;21mINFO[1;0m]11-18 12:43:48 - runner.py[line:51]: Pass Features to Server.
+[[31;21mINFO[1;0m]11-18 12:43:53 - runner.py[line:60]: Train on Server.
+[[31;21mINFO[1;0m]11-18 12:43:53 - server.py[line:92]: (Local Training Epoch: 0 	Loss: 0.821456)
+[[31;21mINFO[1;0m]11-18 12:43:56 - server.py[line:92]: (Local Training Epoch: 50 	Loss: 0.419213)
+[[31;21mINFO[1;0m]11-18 12:43:58 - server.py[line:92]: (Local Training Epoch: 100 	Loss: 0.283509)
+[[31;21mINFO[1;0m]11-18 12:44:01 - server.py[line:92]: (Local Training Epoch: 150 	Loss: 0.216064)
+[[31;21mINFO[1;0m]11-18 12:44:04 - server.py[line:92]: (Local Training Epoch: 200 	Loss: 0.175611)
+[[31;21mINFO[1;0m]11-18 12:44:07 - server.py[line:92]: (Local Training Epoch: 250 	Loss: 0.148404)
+[[31;21mINFO[1;0m]11-18 12:44:09 - server.py[line:92]: (Local Training Epoch: 300 	Loss: 0.128845)
+[[31;21mINFO[1;0m]11-18 12:44:12 - server.py[line:92]: (Local Training Epoch: 350 	Loss: 0.114168)
+[[31;21mINFO[1;0m]11-18 12:44:15 - server.py[line:92]: (Local Training Epoch: 400 	Loss: 0.102777)
+[[31;21mINFO[1;0m]11-18 12:44:18 - server.py[line:92]: (Local Training Epoch: 450 	Loss: 0.093588)
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:70]: Test on Server.
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:72]: Test on Task f0.
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f0.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 194 / 208 = 0.9326923076923077
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 73.20923471450806 / 208 = 0.35196747458898103
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f1.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 186 / 208 = 0.8942307692307693
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 137.18174175545573 / 208 = 0.6595276045935372
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f2.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 169 / 192 = 0.8802083333333334
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 133.1993507295847 / 192 = 0.6937466183832536
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f3.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 160 / 176 = 0.9090909090909091
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 79.0438629835844 / 176 = 0.449112857861275
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f4.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 167 / 192 = 0.8697916666666666
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 125.35913753509521 / 192 = 0.6529121746619543
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f5.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 183 / 208 = 0.8798076923076923
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 124.41427379846573 / 208 = 0.5981455471080083
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f6.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 194 / 208 = 0.9326923076923077
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 76.36803240887821 / 208 = 0.3671540019657606
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f7.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 186 / 208 = 0.8942307692307693
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 137.17430923879147 / 208 = 0.6594918713403436
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f8.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 166 / 192 = 0.8645833333333334
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 151.68614161014557 / 192 = 0.7900319875528415
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f9.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 160 / 176 = 0.9090909090909091
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 79.71951508708298 / 176 = 0.4529517902675169
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f10.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 168 / 192 = 0.875
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 123.3788982629776 / 192 = 0.6425984284530083
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f11.
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:127]: Test: Acc = 184 / 208 = 0.8846153846153846
+[[31;21mINFO[1;0m]11-18 12:44:21 - server.py[line:128]: Test: Loss = 112.97726331651211 / 208 = 0.5431599197909236
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:72]: Test on Task f1.
+[[31;21mINFO[1;0m]11-18 12:44:21 - runner.py[line:74]: Test on Client f0.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 167 / 192 = 0.8697916666666666
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 125.38883975893259 / 192 = 0.6530668737444406
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f1.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 152 / 176 = 0.8636363636363636
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 120.11443185806274 / 176 = 0.682468362829902
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f2.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 151 / 160 = 0.94375
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 38.86172502115369 / 160 = 0.24288578138221056
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f3.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 181 / 192 = 0.9427083333333334
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 39.991310918238014 / 192 = 0.20828807769915633
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f4.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 196 / 208 = 0.9423076923076923
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 52.02572395000607 / 208 = 0.2501236728365676
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f5.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 181 / 192 = 0.9427083333333334
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 59.65546485921368 / 192 = 0.3107055461417379
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f6.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 167 / 192 = 0.8697916666666666
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 125.3894516825676 / 192 = 0.6530700608467063
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f7.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 152 / 176 = 0.8636363636363636
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 114.2711660861969 / 176 = 0.6492679891261187
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f8.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 150 / 160 = 0.9375
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 42.676581501960754 / 160 = 0.2667286343872547
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f9.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 181 / 192 = 0.9427083333333334
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 39.988984919153154 / 192 = 0.20827596312058935
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f10.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 196 / 208 = 0.9423076923076923
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 52.02572463080287 / 208 = 0.25012367610962916
+[[31;21mINFO[1;0m]11-18 12:44:22 - runner.py[line:74]: Test on Client f11.
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:127]: Test: Acc = 181 / 192 = 0.9427083333333334
+[[31;21mINFO[1;0m]11-18 12:44:22 - server.py[line:128]: Test: Loss = 59.655462972819805 / 192 = 0.31070553631676984
