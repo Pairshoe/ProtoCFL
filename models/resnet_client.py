@@ -1,8 +1,8 @@
 import logging
 
+import torch
 from torch import nn
 from torch.nn import functional as F
-import torch.utils.model_zoo as model_zoo
 import torchvision.models as models
 
 from .PyTorch_CIFAR10.cifar10_models.resnet import resnet18
@@ -14,19 +14,20 @@ class ResNet18_Client(nn.Module):
 
         # Construct base resnet (pretrained)
         if pretained == True:
-            # if num_classes == 10:
-            #     model = models.resnet18(pretained=True)
-            #     model_urls = "https://download.pytorch.org/models/resnet18-5c106cde.pth"
-            #     model.load_state_dict(model_zoo.load_url(model_urls,model_dir='./'))
-            #     num_ftrs = model.fc.in_features
-            #     model.fc = nn.Linear(num_ftrs, 100)
-            # elif num_classes == 100:
-            #     self.base = resnet18(pretrained=pretained)
-            # else:
-            #     logging.info("Unsupport num_classes")
-            self.base = resnet18(pretrained=pretained)
+            logging.info("Pretrained")
+            if num_classes == 10:
+                self.base = resnet18(pretrained=pretained)
+            elif num_classes == 100:
+                # self.base = torch.load('/home/pairshoe/ProtoCFL/models/resnet-pre-cifar100.ckpt')
+                model = models.resnet18(pretrained=True)
+                model.load_state_dict(torch.load('/home/pairshoe/ProtoCFL/models/Train-ResNet-on-CIFAR100/resnet18-5c106cde.pth'))
+                self.base = model
+            else:
+                logging.info("Unsupport num_classes")
+            # self.base = resnet18(pretrained=pretained)
         else:
-            self.base = models.resnet18(pretrained=False)
+            logging.info("No Pretrained")
+            self.base = models.resnet18()
 
     def forward(self, x):
         for name, module in self.base._modules.items():

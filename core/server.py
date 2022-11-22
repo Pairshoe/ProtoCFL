@@ -48,9 +48,9 @@ class Server():
             train_data_list = current_features
         # argument
         if argument == True:
-            train_data_list = self.argument_data(train_data_list, scale=3)
+            train_data_list = self.argument_data(train_data_list, scale=self.args.argument_scale)
 
-        train_data = DataLoader(train_data_list, shuffle=True, batch_size=32)
+        train_data = DataLoader(train_data_list, shuffle=True, batch_size=self.args.train_batchsize)
 
         # setting
         criterion = nn.CrossEntropyLoss().to(self.device)
@@ -67,15 +67,25 @@ class Server():
         epoch_loss = []
         for epoch in range(self.args.epochs_on_server):
             batch_loss = []
+            total_right = 0
+            total = 0
+
             for batch_idx, (x, labels) in enumerate(train_data):
                 x, labels = x.to(self.device), labels.to(self.device)
+
                 optimizer.zero_grad()
-                log_probs = model(x.detach())
-                loss = criterion(log_probs, labels)
+
+                outputs = model(x)
+
+                loss = criterion(outputs, labels)
                 loss.backward()
                 optimizer.step()
 
                 batch_loss.append(loss.item())
+                predicted = outputs.data.max(1)[1]
+                total += labels.size(0)
+                total_right += (predicted == labels.data).float().sum()
+
                 # if batch_idx % 10 == 0:
                 #     logging.info(
                 #         "Epoch: {}/{} | Batch: {}/{} | Loss: {}".format(
@@ -86,6 +96,7 @@ class Server():
                 #             loss.item()
                 #         )
                 #     )
+            logging.debug("Training accuracy for epoch {} : {}".format(epoch, 100 * total_right / total))
                 
             if epoch % 50 == 0:
                 epoch_loss.append(sum(batch_loss) / len(batch_loss))

@@ -17,7 +17,7 @@ def init():
     args = load_arguments()
 
     logging.basicConfig(
-        filename=args.results_dir + 'log.txt',
+        # filename=args.results_dir + 'log.txt',
         format='[%(levelname)s]%(asctime)s - %(filename)s[line:%(lineno)d]: %(message)s',
         datefmt='%m-%d %H:%M:%S', level=logging.DEBUG)
     logging.addLevelName(logging.INFO, "\033[31;21m%s\033[1;0m" % logging.getLevelName(logging.INFO))

@@ -24,18 +24,18 @@ def load_data(args):
         logging.debug(f"task {task_id} global: {len(test_data_global[task_id])}")
         train_data_global[task_id] = DataLoader(
             dataset= train_data_global[task_id], batch_size=args.train_batchsize, \
-            shuffle=True, drop_last=True)
+            shuffle=True, drop_last=True, num_workers=8)
         test_data_global[task_id] = DataLoader(
             dataset= test_data_global[task_id], batch_size=args.test_batchsize, \
-            shuffle=True, drop_last=True)
+            shuffle=True, drop_last=True, num_workers=8)
         for client_id in range(args.num_clients):
-            logging.debug(f"task {task_id} client {client_id}: {len(train_data_local_dict[task_id][client_id])}")
-            logging.debug(f"task {task_id} client {client_id}: {len(test_data_local_dict[task_id][client_id])}")
+            logging.debug(f"task {task_id} client {client_id} train data: {len(train_data_local_dict[task_id][client_id])}")
+            logging.debug(f"task {task_id} client {client_id} test data: {len(test_data_local_dict[task_id][client_id])}")
             train_data_local_dict[task_id][client_id] = DataLoader(
                 dataset= train_data_local_dict[task_id][client_id], batch_size=args.train_batchsize, \
-                shuffle=True, drop_last=True)
+                shuffle=True, drop_last=True, num_workers=8)
             test_data_local_dict[task_id][client_id] = DataLoader(
                 dataset= test_data_local_dict[task_id][client_id], batch_size=args.test_batchsize, \
-                shuffle=True, drop_last=True)
+                shuffle=True, drop_last=True, num_workers=8)
 
     return train_data_global, test_data_global, train_data_local_dict, test_data_local_dict

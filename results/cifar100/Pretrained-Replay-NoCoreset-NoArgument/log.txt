@@ -291,3 +291,909 @@
 [[31;21mINFO[1;0m]11-18 14:24:03 - runner.py[line:74]: Test on Client f11.
 [[31;21mINFO[1;0m]11-18 14:24:03 - server.py[line:127]: Test: Acc = 16 / 176 = 0.09090909090909091
 [[31;21mINFO[1;0m]11-18 14:24:03 - server.py[line:128]: Test: Loss = 1077.0950889587402 / 176 = 6.119858459992842
+[[31;21mINFO[1;0m]11-22 08:34:25 - main.py[line:46]: Load Data.
+[[31;21mINFO[1;0m]11-22 08:34:25 - dataloader.py[line:11]: Dataset: cifar100.
+[[31;21mINFO[1;0m]11-22 08:34:29 - dataloader.py[line:16]: Data Partition.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:26]: num_tasks: 2.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:27]: num_clients: 12.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:35]: num_classes: 100.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:36]: num_classes_for_task: 100.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:37]: num_classes_disjoint_for_task: 40.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:38]: num_classes_overlap_for_task: 10.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:42]: num_classes_for_client: 20.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - datapartition.py[line:43]: num_classes_disjoint_for_client: 10.
+[[31;21mINFO[1;0m]11-22 08:34:29 - dataloader.py[line:21]: Data Loader.
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:23]: task 0 global: 3034
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:24]: task 0 global: 599
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 0 train data: 1027
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 0 test data: 192
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 1 train data: 978
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 1 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 2 train data: 1003
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 2 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 3 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 3 test data: 195
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 4 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 4 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 5 train data: 1052
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 5 test data: 190
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 6 train data: 1027
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 6 test data: 192
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 7 train data: 978
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 7 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 8 train data: 1003
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 8 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 9 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 9 test data: 195
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 10 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 10 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 0 client 11 train data: 1052
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 0 client 11 test data: 190
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:23]: task 1 global: 2970
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:24]: task 1 global: 594
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 0 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 0 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 1 train data: 991
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 1 test data: 188
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 2 train data: 946
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 2 test data: 202
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 3 train data: 1006
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 3 test data: 215
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 4 train data: 1020
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 4 test data: 199
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 5 train data: 973
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 5 test data: 191
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 6 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 6 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 7 train data: 991
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 7 test data: 188
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 8 train data: 946
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 8 test data: 202
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 9 train data: 1006
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 9 test data: 215
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 10 train data: 1020
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 10 test data: 199
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:32]: task 1 client 11 train data: 973
+[[33;21mDEBUG[1;0m]11-22 08:34:29 - dataloader.py[line:33]: task 1 client 11 test data: 191
+[[31;21mINFO[1;0m]11-22 08:34:29 - main.py[line:53]: Create Clients.
+[[31;21mINFO[1;0m]11-22 08:34:29 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:30 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:31 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:32 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:33 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:34 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:34 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:35 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:35 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:36 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:36 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:37 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:37 - main.py[line:67]: Create Server.
+[[31;21mINFO[1;0m]11-22 08:34:37 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:34:38 - main.py[line:79]: Start Task 0.
+[[31;21mINFO[1;0m]11-22 08:34:38 - runner.py[line:39]: Collect Features from Clients.
+[[33;21mDEBUG[1;0m]11-22 08:34:38 - runner.py[line:42]: Client 0 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:44 - runner.py[line:44]: Client 0 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:34:44 - runner.py[line:42]: Client 1 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:45 - runner.py[line:44]: Client 1 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:34:45 - runner.py[line:42]: Client 2 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:46 - runner.py[line:44]: Client 2 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:34:46 - runner.py[line:42]: Client 3 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:47 - runner.py[line:44]: Client 3 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:34:47 - runner.py[line:42]: Client 4 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:48 - runner.py[line:44]: Client 4 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:34:48 - runner.py[line:42]: Client 5 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:49 - runner.py[line:44]: Client 5 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:34:49 - runner.py[line:42]: Client 6 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:50 - runner.py[line:44]: Client 6 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:34:50 - runner.py[line:42]: Client 7 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:51 - runner.py[line:44]: Client 7 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:34:51 - runner.py[line:42]: Client 8 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:52 - runner.py[line:44]: Client 8 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:34:52 - runner.py[line:42]: Client 9 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:53 - runner.py[line:44]: Client 9 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:34:53 - runner.py[line:42]: Client 10 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:54 - runner.py[line:44]: Client 10 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:34:54 - runner.py[line:42]: Client 11 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:34:55 - runner.py[line:44]: Client 11 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:37:53 - pyplot.py[line:295]: Loaded backend agg version unknown.
+[[31;21mINFO[1;0m]11-22 08:37:55 - runner.py[line:51]: Pass Features to Server.
+[[31;21mINFO[1;0m]11-22 08:37:55 - runner.py[line:66]: Train on Server.
+[[33;21mDEBUG[1;0m]11-22 08:37:55 - server.py[line:99]: Training accuracy for epoch 0 : 34.02406311035156
+[[31;21mINFO[1;0m]11-22 08:37:55 - server.py[line:103]: (Local Training Epoch: 0 	Loss: 2.639906)
+[[33;21mDEBUG[1;0m]11-22 08:37:56 - server.py[line:99]: Training accuracy for epoch 1 : 51.12800979614258
+[[33;21mDEBUG[1;0m]11-22 08:37:56 - server.py[line:99]: Training accuracy for epoch 2 : 59.792781829833984
+[[33;21mDEBUG[1;0m]11-22 08:37:57 - server.py[line:99]: Training accuracy for epoch 3 : 66.12633514404297
+[[33;21mDEBUG[1;0m]11-22 08:37:57 - server.py[line:99]: Training accuracy for epoch 4 : 70.93081665039062
+[[33;21mDEBUG[1;0m]11-22 08:37:58 - server.py[line:99]: Training accuracy for epoch 5 : 74.13937377929688
+[[33;21mDEBUG[1;0m]11-22 08:37:58 - server.py[line:99]: Training accuracy for epoch 6 : 77.33121490478516
+[[33;21mDEBUG[1;0m]11-22 08:37:58 - server.py[line:99]: Training accuracy for epoch 7 : 79.9632339477539
+[[33;21mDEBUG[1;0m]11-22 08:37:59 - server.py[line:99]: Training accuracy for epoch 8 : 82.28609466552734
+[[33;21mDEBUG[1;0m]11-22 08:37:59 - server.py[line:99]: Training accuracy for epoch 9 : 83.79010772705078
+[[33;21mDEBUG[1;0m]11-22 08:38:00 - server.py[line:99]: Training accuracy for epoch 10 : 85.58656311035156
+[[33;21mDEBUG[1;0m]11-22 08:38:00 - server.py[line:99]: Training accuracy for epoch 11 : 86.346923828125
+[[33;21mDEBUG[1;0m]11-22 08:38:01 - server.py[line:99]: Training accuracy for epoch 12 : 87.48329162597656
+[[33;21mDEBUG[1;0m]11-22 08:38:01 - server.py[line:99]: Training accuracy for epoch 13 : 88.30213928222656
+[[33;21mDEBUG[1;0m]11-22 08:38:01 - server.py[line:99]: Training accuracy for epoch 14 : 89.32987976074219
+[[33;21mDEBUG[1;0m]11-22 08:38:02 - server.py[line:99]: Training accuracy for epoch 15 : 89.58055114746094
+[[33;21mDEBUG[1;0m]11-22 08:38:02 - server.py[line:99]: Training accuracy for epoch 16 : 90.43282318115234
+[[33;21mDEBUG[1;0m]11-22 08:38:03 - server.py[line:99]: Training accuracy for epoch 17 : 90.99264526367188
+[[33;21mDEBUG[1;0m]11-22 08:38:03 - server.py[line:99]: Training accuracy for epoch 18 : 91.41043090820312
+[[33;21mDEBUG[1;0m]11-22 08:38:04 - server.py[line:99]: Training accuracy for epoch 19 : 92.00367736816406
+[[33;21mDEBUG[1;0m]11-22 08:38:04 - server.py[line:99]: Training accuracy for epoch 20 : 92.1123046875
+[[33;21mDEBUG[1;0m]11-22 08:38:05 - server.py[line:99]: Training accuracy for epoch 21 : 92.58856964111328
+[[33;21mDEBUG[1;0m]11-22 08:38:05 - server.py[line:99]: Training accuracy for epoch 22 : 93.00635528564453
+[[33;21mDEBUG[1;0m]11-22 08:38:05 - server.py[line:99]: Training accuracy for epoch 23 : 93.2319564819336
+[[33;21mDEBUG[1;0m]11-22 08:38:06 - server.py[line:99]: Training accuracy for epoch 24 : 93.69151306152344
+[[33;21mDEBUG[1;0m]11-22 08:38:06 - server.py[line:99]: Training accuracy for epoch 25 : 93.65808868408203
+[[33;21mDEBUG[1;0m]11-22 08:38:07 - server.py[line:99]: Training accuracy for epoch 26 : 93.80013275146484
+[[33;21mDEBUG[1;0m]11-22 08:38:07 - server.py[line:99]: Training accuracy for epoch 27 : 94.31818389892578
+[[33;21mDEBUG[1;0m]11-22 08:38:08 - server.py[line:99]: Training accuracy for epoch 28 : 94.13436126708984
+[[33;21mDEBUG[1;0m]11-22 08:38:08 - server.py[line:99]: Training accuracy for epoch 29 : 94.3265380859375
+[[33;21mDEBUG[1;0m]11-22 08:38:09 - server.py[line:99]: Training accuracy for epoch 30 : 94.85294342041016
+[[33;21mDEBUG[1;0m]11-22 08:38:09 - server.py[line:99]: Training accuracy for epoch 31 : 94.903076171875
+[[33;21mDEBUG[1;0m]11-22 08:38:10 - server.py[line:99]: Training accuracy for epoch 32 : 94.7693862915039
+[[33;21mDEBUG[1;0m]11-22 08:38:10 - server.py[line:99]: Training accuracy for epoch 33 : 94.91978454589844
+[[33;21mDEBUG[1;0m]11-22 08:38:11 - server.py[line:99]: Training accuracy for epoch 34 : 95.19552612304688
+[[33;21mDEBUG[1;0m]11-22 08:38:11 - server.py[line:99]: Training accuracy for epoch 35 : 95.41276550292969
+[[33;21mDEBUG[1;0m]11-22 08:38:11 - server.py[line:99]: Training accuracy for epoch 36 : 95.28743743896484
+[[33;21mDEBUG[1;0m]11-22 08:38:12 - server.py[line:99]: Training accuracy for epoch 37 : 95.65508270263672
+[[33;21mDEBUG[1;0m]11-22 08:38:12 - server.py[line:99]: Training accuracy for epoch 38 : 95.63001251220703
+[[33;21mDEBUG[1;0m]11-22 08:38:12 - server.py[line:99]: Training accuracy for epoch 39 : 95.60494995117188
+[[33;21mDEBUG[1;0m]11-22 08:38:13 - server.py[line:99]: Training accuracy for epoch 40 : 95.63001251220703
+[[33;21mDEBUG[1;0m]11-22 08:38:13 - server.py[line:99]: Training accuracy for epoch 41 : 95.98094940185547
+[[33;21mDEBUG[1;0m]11-22 08:38:14 - server.py[line:99]: Training accuracy for epoch 42 : 95.98930358886719
+[[33;21mDEBUG[1;0m]11-22 08:38:14 - server.py[line:99]: Training accuracy for epoch 43 : 95.9224624633789
+[[33;21mDEBUG[1;0m]11-22 08:38:14 - server.py[line:99]: Training accuracy for epoch 44 : 96.00601959228516
+[[33;21mDEBUG[1;0m]11-22 08:38:15 - server.py[line:99]: Training accuracy for epoch 45 : 96.24832916259766
+[[33;21mDEBUG[1;0m]11-22 08:38:15 - server.py[line:99]: Training accuracy for epoch 46 : 96.40708923339844
+[[33;21mDEBUG[1;0m]11-22 08:38:16 - server.py[line:99]: Training accuracy for epoch 47 : 96.23162078857422
+[[33;21mDEBUG[1;0m]11-22 08:38:16 - server.py[line:99]: Training accuracy for epoch 48 : 96.3569564819336
+[[33;21mDEBUG[1;0m]11-22 08:38:17 - server.py[line:99]: Training accuracy for epoch 49 : 96.42379760742188
+[[33;21mDEBUG[1;0m]11-22 08:38:17 - server.py[line:99]: Training accuracy for epoch 50 : 96.34024047851562
+[[31;21mINFO[1;0m]11-22 08:38:17 - server.py[line:103]: (Local Training Epoch: 50 	Loss: 1.558235)
+[[33;21mDEBUG[1;0m]11-22 08:38:18 - server.py[line:99]: Training accuracy for epoch 51 : 96.39037322998047
+[[33;21mDEBUG[1;0m]11-22 08:38:18 - server.py[line:99]: Training accuracy for epoch 52 : 96.48228454589844
+[[33;21mDEBUG[1;0m]11-22 08:38:19 - server.py[line:99]: Training accuracy for epoch 53 : 96.57420349121094
+[[33;21mDEBUG[1;0m]11-22 08:38:20 - server.py[line:99]: Training accuracy for epoch 54 : 96.4990005493164
+[[33;21mDEBUG[1;0m]11-22 08:38:20 - server.py[line:99]: Training accuracy for epoch 55 : 96.64939880371094
+[[33;21mDEBUG[1;0m]11-22 08:38:20 - server.py[line:99]: Training accuracy for epoch 56 : 96.6326904296875
+[[33;21mDEBUG[1;0m]11-22 08:38:21 - server.py[line:99]: Training accuracy for epoch 57 : 96.6326904296875
+[[33;21mDEBUG[1;0m]11-22 08:38:21 - server.py[line:99]: Training accuracy for epoch 58 : 96.6661148071289
+[[33;21mDEBUG[1;0m]11-22 08:38:22 - server.py[line:99]: Training accuracy for epoch 59 : 96.69953155517578
+[[33;21mDEBUG[1;0m]11-22 08:38:22 - server.py[line:99]: Training accuracy for epoch 60 : 96.73295593261719
+[[33;21mDEBUG[1;0m]11-22 08:38:23 - server.py[line:99]: Training accuracy for epoch 61 : 96.74966430664062
+[[33;21mDEBUG[1;0m]11-22 08:38:23 - server.py[line:99]: Training accuracy for epoch 62 : 96.72460174560547
+[[33;21mDEBUG[1;0m]11-22 08:38:24 - server.py[line:99]: Training accuracy for epoch 63 : 96.89171600341797
+[[33;21mDEBUG[1;0m]11-22 08:38:25 - server.py[line:99]: Training accuracy for epoch 64 : 96.90007019042969
+[[33;21mDEBUG[1;0m]11-22 08:38:25 - server.py[line:99]: Training accuracy for epoch 65 : 97.02540588378906
+[[33;21mDEBUG[1;0m]11-22 08:38:26 - server.py[line:99]: Training accuracy for epoch 66 : 96.83322143554688
+[[33;21mDEBUG[1;0m]11-22 08:38:26 - server.py[line:99]: Training accuracy for epoch 67 : 96.79144287109375
+[[33;21mDEBUG[1;0m]11-22 08:38:27 - server.py[line:99]: Training accuracy for epoch 68 : 96.82486724853516
+[[33;21mDEBUG[1;0m]11-22 08:38:27 - server.py[line:99]: Training accuracy for epoch 69 : 96.96691131591797
+[[33;21mDEBUG[1;0m]11-22 08:38:27 - server.py[line:99]: Training accuracy for epoch 70 : 96.99198150634766
+[[33;21mDEBUG[1;0m]11-22 08:38:28 - server.py[line:99]: Training accuracy for epoch 71 : 96.7413101196289
+[[33;21mDEBUG[1;0m]11-22 08:38:28 - server.py[line:99]: Training accuracy for epoch 72 : 96.85829162597656
+[[33;21mDEBUG[1;0m]11-22 08:38:29 - server.py[line:99]: Training accuracy for epoch 73 : 97.00033569335938
+[[33;21mDEBUG[1;0m]11-22 08:38:29 - server.py[line:99]: Training accuracy for epoch 74 : 96.84993743896484
+[[33;21mDEBUG[1;0m]11-22 08:38:29 - server.py[line:99]: Training accuracy for epoch 75 : 97.09224700927734
+[[33;21mDEBUG[1;0m]11-22 08:38:30 - server.py[line:99]: Training accuracy for epoch 76 : 97.15909576416016
+[[33;21mDEBUG[1;0m]11-22 08:38:30 - server.py[line:99]: Training accuracy for epoch 77 : 97.00033569335938
+[[33;21mDEBUG[1;0m]11-22 08:38:30 - server.py[line:99]: Training accuracy for epoch 78 : 97.30949401855469
+[[33;21mDEBUG[1;0m]11-22 08:38:31 - server.py[line:99]: Training accuracy for epoch 79 : 97.08389282226562
+[[33;21mDEBUG[1;0m]11-22 08:38:31 - server.py[line:99]: Training accuracy for epoch 80 : 96.97526550292969
+[[33;21mDEBUG[1;0m]11-22 08:38:31 - server.py[line:99]: Training accuracy for epoch 81 : 97.0086898803711
+[[33;21mDEBUG[1;0m]11-22 08:38:32 - server.py[line:99]: Training accuracy for epoch 82 : 97.0755386352539
+[[33;21mDEBUG[1;0m]11-22 08:38:32 - server.py[line:99]: Training accuracy for epoch 83 : 97.14237976074219
+[[33;21mDEBUG[1;0m]11-22 08:38:32 - server.py[line:99]: Training accuracy for epoch 84 : 97.23429107666016
+[[33;21mDEBUG[1;0m]11-22 08:38:33 - server.py[line:99]: Training accuracy for epoch 85 : 97.11731719970703
+[[33;21mDEBUG[1;0m]11-22 08:38:33 - server.py[line:99]: Training accuracy for epoch 86 : 97.1507339477539
+[[33;21mDEBUG[1;0m]11-22 08:38:33 - server.py[line:99]: Training accuracy for epoch 87 : 97.18415832519531
+[[33;21mDEBUG[1;0m]11-22 08:38:34 - server.py[line:99]: Training accuracy for epoch 88 : 97.16744995117188
+[[33;21mDEBUG[1;0m]11-22 08:38:34 - server.py[line:99]: Training accuracy for epoch 89 : 97.209228515625
+[[33;21mDEBUG[1;0m]11-22 08:38:34 - server.py[line:99]: Training accuracy for epoch 90 : 97.24264526367188
+[[33;21mDEBUG[1;0m]11-22 08:38:35 - server.py[line:99]: Training accuracy for epoch 91 : 97.3178482055664
+[[33;21mDEBUG[1;0m]11-22 08:38:35 - server.py[line:99]: Training accuracy for epoch 92 : 97.11731719970703
+[[33;21mDEBUG[1;0m]11-22 08:38:36 - server.py[line:99]: Training accuracy for epoch 93 : 97.25100708007812
+[[33;21mDEBUG[1;0m]11-22 08:38:36 - server.py[line:99]: Training accuracy for epoch 94 : 97.32620239257812
+[[33;21mDEBUG[1;0m]11-22 08:38:36 - server.py[line:99]: Training accuracy for epoch 95 : 97.21758270263672
+[[33;21mDEBUG[1;0m]11-22 08:38:37 - server.py[line:99]: Training accuracy for epoch 96 : 97.24264526367188
+[[33;21mDEBUG[1;0m]11-22 08:38:37 - server.py[line:99]: Training accuracy for epoch 97 : 97.13402557373047
+[[33;21mDEBUG[1;0m]11-22 08:38:37 - server.py[line:99]: Training accuracy for epoch 98 : 97.24264526367188
+[[33;21mDEBUG[1;0m]11-22 08:38:38 - server.py[line:99]: Training accuracy for epoch 99 : 97.19251251220703
+[[31;21mINFO[1;0m]11-22 08:38:38 - runner.py[line:70]: Test on Server.
+[[31;21mINFO[1;0m]11-22 08:38:38 - runner.py[line:72]: Test on Task 0.
+[[31;21mINFO[1;0m]11-22 08:38:38 - runner.py[line:74]: Test on Client 0.
+[[31;21mINFO[1;0m]11-22 08:38:38 - server.py[line:138]: Test: Acc = 56 / 192 = 0.2916666666666667
+[[31;21mINFO[1;0m]11-22 08:38:38 - server.py[line:139]: Test: Loss = 647.9299011230469 / 192 = 3.3746349016825357
+[[31;21mINFO[1;0m]11-22 08:38:38 - runner.py[line:74]: Test on Client 1.
+[[31;21mINFO[1;0m]11-22 08:38:39 - server.py[line:138]: Test: Acc = 64 / 192 = 0.3333333333333333
+[[31;21mINFO[1;0m]11-22 08:38:39 - server.py[line:139]: Test: Loss = 595.2026748657227 / 192 = 3.1000139315923056
+[[31;21mINFO[1;0m]11-22 08:38:39 - runner.py[line:74]: Test on Client 2.
+[[31;21mINFO[1;0m]11-22 08:38:40 - server.py[line:138]: Test: Acc = 74 / 192 = 0.3854166666666667
+[[31;21mINFO[1;0m]11-22 08:38:40 - server.py[line:139]: Test: Loss = 574.9682083129883 / 192 = 2.9946260849634805
+[[31;21mINFO[1;0m]11-22 08:38:40 - runner.py[line:74]: Test on Client 3.
+[[31;21mINFO[1;0m]11-22 08:38:40 - server.py[line:138]: Test: Acc = 64 / 192 = 0.3333333333333333
+[[31;21mINFO[1;0m]11-22 08:38:40 - server.py[line:139]: Test: Loss = 590.3913116455078 / 192 = 3.0749547481536865
+[[31;21mINFO[1;0m]11-22 08:38:40 - runner.py[line:74]: Test on Client 4.
+[[31;21mINFO[1;0m]11-22 08:38:41 - server.py[line:138]: Test: Acc = 71 / 192 = 0.3697916666666667
+[[31;21mINFO[1;0m]11-22 08:38:41 - server.py[line:139]: Test: Loss = 545.2371444702148 / 192 = 2.839776794115702
+[[31;21mINFO[1;0m]11-22 08:38:41 - runner.py[line:74]: Test on Client 5.
+[[31;21mINFO[1;0m]11-22 08:38:42 - server.py[line:138]: Test: Acc = 55 / 160 = 0.34375
+[[31;21mINFO[1;0m]11-22 08:38:42 - server.py[line:139]: Test: Loss = 489.5083236694336 / 160 = 3.05942702293396
+[[31;21mINFO[1;0m]11-22 08:38:42 - runner.py[line:74]: Test on Client 6.
+[[31;21mINFO[1;0m]11-22 08:38:43 - server.py[line:138]: Test: Acc = 56 / 192 = 0.2916666666666667
+[[31;21mINFO[1;0m]11-22 08:38:43 - server.py[line:139]: Test: Loss = 647.9299011230469 / 192 = 3.3746349016825357
+[[31;21mINFO[1;0m]11-22 08:38:43 - runner.py[line:74]: Test on Client 7.
+[[31;21mINFO[1;0m]11-22 08:38:43 - server.py[line:138]: Test: Acc = 69 / 192 = 0.359375
+[[31;21mINFO[1;0m]11-22 08:38:43 - server.py[line:139]: Test: Loss = 578.4884414672852 / 192 = 3.0129606326421103
+[[31;21mINFO[1;0m]11-22 08:38:43 - runner.py[line:74]: Test on Client 8.
+[[31;21mINFO[1;0m]11-22 08:38:44 - server.py[line:138]: Test: Acc = 74 / 192 = 0.3854166666666667
+[[31;21mINFO[1;0m]11-22 08:38:44 - server.py[line:139]: Test: Loss = 564.3295440673828 / 192 = 2.939216375350952
+[[31;21mINFO[1;0m]11-22 08:38:44 - runner.py[line:74]: Test on Client 9.
+[[31;21mINFO[1;0m]11-22 08:38:45 - server.py[line:138]: Test: Acc = 64 / 192 = 0.3333333333333333
+[[31;21mINFO[1;0m]11-22 08:38:45 - server.py[line:139]: Test: Loss = 593.0951690673828 / 192 = 3.0890373388926187
+[[31;21mINFO[1;0m]11-22 08:38:45 - runner.py[line:74]: Test on Client 10.
+[[31;21mINFO[1;0m]11-22 08:38:46 - server.py[line:138]: Test: Acc = 72 / 192 = 0.375
+[[31;21mINFO[1;0m]11-22 08:38:46 - server.py[line:139]: Test: Loss = 543.470100402832 / 192 = 2.8305734395980835
+[[31;21mINFO[1;0m]11-22 08:38:46 - runner.py[line:74]: Test on Client 11.
+[[31;21mINFO[1;0m]11-22 08:38:46 - server.py[line:138]: Test: Acc = 52 / 160 = 0.325
+[[31;21mINFO[1;0m]11-22 08:38:46 - server.py[line:139]: Test: Loss = 508.49158477783203 / 160 = 3.1780724048614504
+[[31;21mINFO[1;0m]11-22 08:38:46 - main.py[line:79]: Start Task 1.
+[[31;21mINFO[1;0m]11-22 08:38:46 - runner.py[line:39]: Collect Features from Clients.
+[[33;21mDEBUG[1;0m]11-22 08:38:46 - runner.py[line:42]: Client 0 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:47 - runner.py[line:44]: Client 0 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:38:47 - runner.py[line:42]: Client 1 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:48 - runner.py[line:44]: Client 1 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:38:48 - runner.py[line:42]: Client 2 train_data size: 29 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:49 - runner.py[line:44]: Client 2 c_feature size: 928.
+[[33;21mDEBUG[1;0m]11-22 08:38:49 - runner.py[line:42]: Client 3 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:50 - runner.py[line:44]: Client 3 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:38:50 - runner.py[line:42]: Client 4 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:51 - runner.py[line:44]: Client 4 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:38:51 - runner.py[line:42]: Client 5 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:53 - runner.py[line:44]: Client 5 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:38:53 - runner.py[line:42]: Client 6 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:54 - runner.py[line:44]: Client 6 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:38:54 - runner.py[line:42]: Client 7 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:54 - runner.py[line:44]: Client 7 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:38:54 - runner.py[line:42]: Client 8 train_data size: 29 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:55 - runner.py[line:44]: Client 8 c_feature size: 928.
+[[33;21mDEBUG[1;0m]11-22 08:38:55 - runner.py[line:42]: Client 9 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:56 - runner.py[line:44]: Client 9 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:38:56 - runner.py[line:42]: Client 10 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:57 - runner.py[line:44]: Client 10 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:38:57 - runner.py[line:42]: Client 11 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:38:59 - runner.py[line:44]: Client 11 c_feature size: 960.
+[[31;21mINFO[1;0m]11-22 08:39:50 - runner.py[line:51]: Pass Features to Server.
+[[31;21mINFO[1;0m]11-22 08:39:50 - runner.py[line:66]: Train on Server.
+[[33;21mDEBUG[1;0m]11-22 08:39:51 - server.py[line:99]: Training accuracy for epoch 0 : 67.5135498046875
+[[31;21mINFO[1;0m]11-22 08:39:51 - server.py[line:103]: (Local Training Epoch: 0 	Loss: 1.623753)
+[[33;21mDEBUG[1;0m]11-22 08:39:52 - server.py[line:99]: Training accuracy for epoch 1 : 73.45443725585938
+[[33;21mDEBUG[1;0m]11-22 08:39:52 - server.py[line:99]: Training accuracy for epoch 2 : 76.43123626708984
+[[33;21mDEBUG[1;0m]11-22 08:39:53 - server.py[line:99]: Training accuracy for epoch 3 : 78.28167724609375
+[[33;21mDEBUG[1;0m]11-22 08:39:54 - server.py[line:99]: Training accuracy for epoch 4 : 79.87381744384766
+[[33;21mDEBUG[1;0m]11-22 08:39:54 - server.py[line:99]: Training accuracy for epoch 5 : 80.86890411376953
+[[33;21mDEBUG[1;0m]11-22 08:39:55 - server.py[line:99]: Training accuracy for epoch 6 : 81.91480255126953
+[[33;21mDEBUG[1;0m]11-22 08:39:56 - server.py[line:99]: Training accuracy for epoch 7 : 82.24508666992188
+[[33;21mDEBUG[1;0m]11-22 08:39:57 - server.py[line:99]: Training accuracy for epoch 8 : 82.95223999023438
+[[33;21mDEBUG[1;0m]11-22 08:39:57 - server.py[line:99]: Training accuracy for epoch 9 : 83.11737823486328
+[[33;21mDEBUG[1;0m]11-22 08:39:58 - server.py[line:99]: Training accuracy for epoch 10 : 83.49000549316406
+[[33;21mDEBUG[1;0m]11-22 08:39:59 - server.py[line:99]: Training accuracy for epoch 11 : 84.09552764892578
+[[33;21mDEBUG[1;0m]11-22 08:39:59 - server.py[line:99]: Training accuracy for epoch 12 : 84.2013931274414
+[[33;21mDEBUG[1;0m]11-22 08:40:00 - server.py[line:99]: Training accuracy for epoch 13 : 84.41734313964844
+[[33;21mDEBUG[1;0m]11-22 08:40:01 - server.py[line:99]: Training accuracy for epoch 14 : 84.63753509521484
+[[33;21mDEBUG[1;0m]11-22 08:40:01 - server.py[line:99]: Training accuracy for epoch 15 : 84.98052215576172
+[[33;21mDEBUG[1;0m]11-22 08:40:02 - server.py[line:99]: Training accuracy for epoch 16 : 84.90007019042969
+[[33;21mDEBUG[1;0m]11-22 08:40:03 - server.py[line:99]: Training accuracy for epoch 17 : 85.03980255126953
+[[33;21mDEBUG[1;0m]11-22 08:40:03 - server.py[line:99]: Training accuracy for epoch 18 : 85.2557601928711
+[[33;21mDEBUG[1;0m]11-22 08:40:04 - server.py[line:99]: Training accuracy for epoch 19 : 85.26422882080078
+[[33;21mDEBUG[1;0m]11-22 08:40:05 - server.py[line:99]: Training accuracy for epoch 20 : 85.30657196044922
+[[33;21mDEBUG[1;0m]11-22 08:40:05 - server.py[line:99]: Training accuracy for epoch 21 : 85.63685607910156
+[[33;21mDEBUG[1;0m]11-22 08:40:06 - server.py[line:99]: Training accuracy for epoch 22 : 85.56063842773438
+[[33;21mDEBUG[1;0m]11-22 08:40:07 - server.py[line:99]: Training accuracy for epoch 23 : 85.69190216064453
+[[33;21mDEBUG[1;0m]11-22 08:40:07 - server.py[line:99]: Training accuracy for epoch 24 : 85.85704803466797
+[[33;21mDEBUG[1;0m]11-22 08:40:08 - server.py[line:99]: Training accuracy for epoch 25 : 85.78506469726562
+[[33;21mDEBUG[1;0m]11-22 08:40:09 - server.py[line:99]: Training accuracy for epoch 26 : 85.86551666259766
+[[33;21mDEBUG[1;0m]11-22 08:40:09 - server.py[line:99]: Training accuracy for epoch 27 : 85.95020294189453
+[[33;21mDEBUG[1;0m]11-22 08:40:10 - server.py[line:99]: Training accuracy for epoch 28 : 85.86551666259766
+[[33;21mDEBUG[1;0m]11-22 08:40:11 - server.py[line:99]: Training accuracy for epoch 29 : 85.82317352294922
+[[33;21mDEBUG[1;0m]11-22 08:40:11 - server.py[line:99]: Training accuracy for epoch 30 : 86.1661605834961
+[[33;21mDEBUG[1;0m]11-22 08:40:12 - server.py[line:99]: Training accuracy for epoch 31 : 86.03489685058594
+[[33;21mDEBUG[1;0m]11-22 08:40:13 - server.py[line:99]: Training accuracy for epoch 32 : 85.85704803466797
+[[33;21mDEBUG[1;0m]11-22 08:40:13 - server.py[line:99]: Training accuracy for epoch 33 : 86.04759979248047
+[[33;21mDEBUG[1;0m]11-22 08:40:14 - server.py[line:99]: Training accuracy for epoch 34 : 86.17039489746094
+[[33;21mDEBUG[1;0m]11-22 08:40:15 - server.py[line:99]: Training accuracy for epoch 35 : 86.12381744384766
+[[33;21mDEBUG[1;0m]11-22 08:40:15 - server.py[line:99]: Training accuracy for epoch 36 : 86.25084686279297
+[[33;21mDEBUG[1;0m]11-22 08:40:16 - server.py[line:99]: Training accuracy for epoch 37 : 86.1576919555664
+[[33;21mDEBUG[1;0m]11-22 08:40:17 - server.py[line:99]: Training accuracy for epoch 38 : 86.26778411865234
+[[33;21mDEBUG[1;0m]11-22 08:40:17 - server.py[line:99]: Training accuracy for epoch 39 : 86.12381744384766
+[[33;21mDEBUG[1;0m]11-22 08:40:18 - server.py[line:99]: Training accuracy for epoch 40 : 86.4159927368164
+[[33;21mDEBUG[1;0m]11-22 08:40:19 - server.py[line:99]: Training accuracy for epoch 41 : 86.06877136230469
+[[33;21mDEBUG[1;0m]11-22 08:40:19 - server.py[line:99]: Training accuracy for epoch 42 : 86.4541015625
+[[33;21mDEBUG[1;0m]11-22 08:40:20 - server.py[line:99]: Training accuracy for epoch 43 : 86.2254409790039
+[[33;21mDEBUG[1;0m]11-22 08:40:20 - server.py[line:99]: Training accuracy for epoch 44 : 86.3016586303711
+[[33;21mDEBUG[1;0m]11-22 08:40:21 - server.py[line:99]: Training accuracy for epoch 45 : 86.14922332763672
+[[33;21mDEBUG[1;0m]11-22 08:40:22 - server.py[line:99]: Training accuracy for epoch 46 : 86.4541015625
+[[33;21mDEBUG[1;0m]11-22 08:40:22 - server.py[line:99]: Training accuracy for epoch 47 : 86.14922332763672
+[[33;21mDEBUG[1;0m]11-22 08:40:23 - server.py[line:99]: Training accuracy for epoch 48 : 86.21273803710938
+[[33;21mDEBUG[1;0m]11-22 08:40:23 - server.py[line:99]: Training accuracy for epoch 49 : 86.19580078125
+[[33;21mDEBUG[1;0m]11-22 08:40:24 - server.py[line:99]: Training accuracy for epoch 50 : 86.36094665527344
+[[31;21mINFO[1;0m]11-22 08:40:24 - server.py[line:103]: (Local Training Epoch: 50 	Loss: 1.219280)
+[[33;21mDEBUG[1;0m]11-22 08:40:25 - server.py[line:99]: Training accuracy for epoch 51 : 86.49644470214844
+[[33;21mDEBUG[1;0m]11-22 08:40:25 - server.py[line:99]: Training accuracy for epoch 52 : 86.17886352539062
+[[33;21mDEBUG[1;0m]11-22 08:40:26 - server.py[line:99]: Training accuracy for epoch 53 : 86.31436157226562
+[[33;21mDEBUG[1;0m]11-22 08:40:26 - server.py[line:99]: Training accuracy for epoch 54 : 86.5599594116211
+[[33;21mDEBUG[1;0m]11-22 08:40:27 - server.py[line:99]: Training accuracy for epoch 55 : 86.50914764404297
+[[33;21mDEBUG[1;0m]11-22 08:40:28 - server.py[line:99]: Training accuracy for epoch 56 : 86.39482116699219
+[[33;21mDEBUG[1;0m]11-22 08:40:28 - server.py[line:99]: Training accuracy for epoch 57 : 86.39058685302734
+[[33;21mDEBUG[1;0m]11-22 08:40:29 - server.py[line:99]: Training accuracy for epoch 58 : 86.56419372558594
+[[33;21mDEBUG[1;0m]11-22 08:40:30 - server.py[line:99]: Training accuracy for epoch 59 : 86.52608489990234
+[[33;21mDEBUG[1;0m]11-22 08:40:30 - server.py[line:99]: Training accuracy for epoch 60 : 86.42869567871094
+[[33;21mDEBUG[1;0m]11-22 08:40:31 - server.py[line:99]: Training accuracy for epoch 61 : 86.5599594116211
+[[33;21mDEBUG[1;0m]11-22 08:40:31 - server.py[line:99]: Training accuracy for epoch 62 : 86.55572509765625
+[[33;21mDEBUG[1;0m]11-22 08:40:32 - server.py[line:99]: Training accuracy for epoch 63 : 86.55572509765625
+[[33;21mDEBUG[1;0m]11-22 08:40:33 - server.py[line:99]: Training accuracy for epoch 64 : 86.58113098144531
+[[33;21mDEBUG[1;0m]11-22 08:40:33 - server.py[line:99]: Training accuracy for epoch 65 : 86.31859588623047
+[[33;21mDEBUG[1;0m]11-22 08:40:34 - server.py[line:99]: Training accuracy for epoch 66 : 86.35247802734375
+[[33;21mDEBUG[1;0m]11-22 08:40:34 - server.py[line:99]: Training accuracy for epoch 67 : 86.26778411865234
+[[33;21mDEBUG[1;0m]11-22 08:40:35 - server.py[line:99]: Training accuracy for epoch 68 : 86.64464569091797
+[[33;21mDEBUG[1;0m]11-22 08:40:36 - server.py[line:99]: Training accuracy for epoch 69 : 86.58113098144531
+[[33;21mDEBUG[1;0m]11-22 08:40:36 - server.py[line:99]: Training accuracy for epoch 70 : 86.46680450439453
+[[33;21mDEBUG[1;0m]11-22 08:40:37 - server.py[line:99]: Training accuracy for epoch 71 : 86.36941528320312
+[[33;21mDEBUG[1;0m]11-22 08:40:38 - server.py[line:99]: Training accuracy for epoch 72 : 86.31012725830078
+[[33;21mDEBUG[1;0m]11-22 08:40:38 - server.py[line:99]: Training accuracy for epoch 73 : 86.31436157226562
+[[33;21mDEBUG[1;0m]11-22 08:40:39 - server.py[line:99]: Training accuracy for epoch 74 : 86.47950744628906
+[[33;21mDEBUG[1;0m]11-22 08:40:39 - server.py[line:99]: Training accuracy for epoch 75 : 86.50914764404297
+[[33;21mDEBUG[1;0m]11-22 08:40:40 - server.py[line:99]: Training accuracy for epoch 76 : 86.43716430664062
+[[33;21mDEBUG[1;0m]11-22 08:40:41 - server.py[line:99]: Training accuracy for epoch 77 : 86.40328979492188
+[[33;21mDEBUG[1;0m]11-22 08:40:41 - server.py[line:99]: Training accuracy for epoch 78 : 86.4244613647461
+[[33;21mDEBUG[1;0m]11-22 08:40:42 - server.py[line:99]: Training accuracy for epoch 79 : 86.61500549316406
+[[33;21mDEBUG[1;0m]11-22 08:40:42 - server.py[line:99]: Training accuracy for epoch 80 : 86.59806823730469
+[[33;21mDEBUG[1;0m]11-22 08:40:43 - server.py[line:99]: Training accuracy for epoch 81 : 86.6827621459961
+[[33;21mDEBUG[1;0m]11-22 08:40:44 - server.py[line:99]: Training accuracy for epoch 82 : 86.28895568847656
+[[33;21mDEBUG[1;0m]11-22 08:40:44 - server.py[line:99]: Training accuracy for epoch 83 : 86.46257019042969
+[[33;21mDEBUG[1;0m]11-22 08:40:45 - server.py[line:99]: Training accuracy for epoch 84 : 86.4541015625
+[[33;21mDEBUG[1;0m]11-22 08:40:45 - server.py[line:99]: Training accuracy for epoch 85 : 86.50914764404297
+[[33;21mDEBUG[1;0m]11-22 08:40:46 - server.py[line:99]: Training accuracy for epoch 86 : 86.44986724853516
+[[33;21mDEBUG[1;0m]11-22 08:40:47 - server.py[line:99]: Training accuracy for epoch 87 : 86.38211822509766
+[[33;21mDEBUG[1;0m]11-22 08:40:47 - server.py[line:99]: Training accuracy for epoch 88 : 86.51761627197266
+[[33;21mDEBUG[1;0m]11-22 08:40:48 - server.py[line:99]: Training accuracy for epoch 89 : 86.36094665527344
+[[33;21mDEBUG[1;0m]11-22 08:40:48 - server.py[line:99]: Training accuracy for epoch 90 : 86.43292999267578
+[[33;21mDEBUG[1;0m]11-22 08:40:49 - server.py[line:99]: Training accuracy for epoch 91 : 86.69123077392578
+[[33;21mDEBUG[1;0m]11-22 08:40:50 - server.py[line:99]: Training accuracy for epoch 92 : 86.58113098144531
+[[33;21mDEBUG[1;0m]11-22 08:40:50 - server.py[line:99]: Training accuracy for epoch 93 : 86.5218505859375
+[[33;21mDEBUG[1;0m]11-22 08:40:51 - server.py[line:99]: Training accuracy for epoch 94 : 86.46257019042969
+[[33;21mDEBUG[1;0m]11-22 08:40:51 - server.py[line:99]: Training accuracy for epoch 95 : 86.52608489990234
+[[33;21mDEBUG[1;0m]11-22 08:40:52 - server.py[line:99]: Training accuracy for epoch 96 : 86.80555725097656
+[[33;21mDEBUG[1;0m]11-22 08:40:52 - server.py[line:99]: Training accuracy for epoch 97 : 86.24661254882812
+[[33;21mDEBUG[1;0m]11-22 08:40:53 - server.py[line:99]: Training accuracy for epoch 98 : 86.46257019042969
+[[33;21mDEBUG[1;0m]11-22 08:40:54 - server.py[line:99]: Training accuracy for epoch 99 : 86.39058685302734
+[[31;21mINFO[1;0m]11-22 08:40:54 - runner.py[line:70]: Test on Server.
+[[31;21mINFO[1;0m]11-22 08:40:54 - runner.py[line:72]: Test on Task 0.
+[[31;21mINFO[1;0m]11-22 08:40:54 - runner.py[line:74]: Test on Client 0.
+[[31;21mINFO[1;0m]11-22 08:40:54 - server.py[line:138]: Test: Acc = 46 / 192 = 0.23958333333333334
+[[31;21mINFO[1;0m]11-22 08:40:54 - server.py[line:139]: Test: Loss = 681.6498489379883 / 192 = 3.5502596298853555
+[[31;21mINFO[1;0m]11-22 08:40:54 - runner.py[line:74]: Test on Client 1.
+[[31;21mINFO[1;0m]11-22 08:40:55 - server.py[line:138]: Test: Acc = 63 / 192 = 0.328125
+[[31;21mINFO[1;0m]11-22 08:40:55 - server.py[line:139]: Test: Loss = 613.5664825439453 / 192 = 3.1956587632497153
+[[31;21mINFO[1;0m]11-22 08:40:55 - runner.py[line:74]: Test on Client 2.
+[[31;21mINFO[1;0m]11-22 08:40:55 - server.py[line:138]: Test: Acc = 60 / 192 = 0.3125
+[[31;21mINFO[1;0m]11-22 08:40:55 - server.py[line:139]: Test: Loss = 605.5876083374023 / 192 = 3.1541021267573037
+[[31;21mINFO[1;0m]11-22 08:40:55 - runner.py[line:74]: Test on Client 3.
+[[31;21mINFO[1;0m]11-22 08:40:56 - server.py[line:138]: Test: Acc = 51 / 192 = 0.265625
+[[31;21mINFO[1;0m]11-22 08:40:56 - server.py[line:139]: Test: Loss = 652.9184951782227 / 192 = 3.400617162386576
+[[31;21mINFO[1;0m]11-22 08:40:56 - runner.py[line:74]: Test on Client 4.
+[[31;21mINFO[1;0m]11-22 08:40:56 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:40:56 - server.py[line:139]: Test: Loss = 602.1735534667969 / 192 = 3.1363205909729004
+[[31;21mINFO[1;0m]11-22 08:40:56 - runner.py[line:74]: Test on Client 5.
+[[31;21mINFO[1;0m]11-22 08:40:57 - server.py[line:138]: Test: Acc = 46 / 160 = 0.2875
+[[31;21mINFO[1;0m]11-22 08:40:57 - server.py[line:139]: Test: Loss = 514.1266860961914 / 160 = 3.213291788101196
+[[31;21mINFO[1;0m]11-22 08:40:57 - runner.py[line:74]: Test on Client 6.
+[[31;21mINFO[1;0m]11-22 08:40:57 - server.py[line:138]: Test: Acc = 46 / 192 = 0.23958333333333334
+[[31;21mINFO[1;0m]11-22 08:40:57 - server.py[line:139]: Test: Loss = 681.6498718261719 / 192 = 3.550259749094645
+[[31;21mINFO[1;0m]11-22 08:40:57 - runner.py[line:74]: Test on Client 7.
+[[31;21mINFO[1;0m]11-22 08:40:58 - server.py[line:138]: Test: Acc = 57 / 192 = 0.296875
+[[31;21mINFO[1;0m]11-22 08:40:58 - server.py[line:139]: Test: Loss = 628.902946472168 / 192 = 3.2755361795425415
+[[31;21mINFO[1;0m]11-22 08:40:58 - runner.py[line:74]: Test on Client 8.
+[[31;21mINFO[1;0m]11-22 08:40:58 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:40:58 - server.py[line:139]: Test: Loss = 621.4445724487305 / 192 = 3.2366904815038047
+[[31;21mINFO[1;0m]11-22 08:40:58 - runner.py[line:74]: Test on Client 9.
+[[31;21mINFO[1;0m]11-22 08:40:59 - server.py[line:138]: Test: Acc = 52 / 192 = 0.2708333333333333
+[[31;21mINFO[1;0m]11-22 08:40:59 - server.py[line:139]: Test: Loss = 642.9630508422852 / 192 = 3.3487658898035684
+[[31;21mINFO[1;0m]11-22 08:40:59 - runner.py[line:74]: Test on Client 10.
+[[31;21mINFO[1;0m]11-22 08:40:59 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:40:59 - server.py[line:139]: Test: Loss = 597.9256210327148 / 192 = 3.114195942878723
+[[31;21mINFO[1;0m]11-22 08:40:59 - runner.py[line:74]: Test on Client 11.
+[[31;21mINFO[1;0m]11-22 08:41:00 - server.py[line:138]: Test: Acc = 44 / 160 = 0.275
+[[31;21mINFO[1;0m]11-22 08:41:00 - server.py[line:139]: Test: Loss = 512.0405807495117 / 160 = 3.200253629684448
+[[31;21mINFO[1;0m]11-22 08:41:00 - runner.py[line:72]: Test on Task 1.
+[[31;21mINFO[1;0m]11-22 08:41:00 - runner.py[line:74]: Test on Client 0.
+[[31;21mINFO[1;0m]11-22 08:41:00 - server.py[line:138]: Test: Acc = 60 / 192 = 0.3125
+[[31;21mINFO[1;0m]11-22 08:41:00 - server.py[line:139]: Test: Loss = 604.319953918457 / 192 = 3.147499759991964
+[[31;21mINFO[1;0m]11-22 08:41:00 - runner.py[line:74]: Test on Client 1.
+[[31;21mINFO[1;0m]11-22 08:41:01 - server.py[line:138]: Test: Acc = 37 / 160 = 0.23125
+[[31;21mINFO[1;0m]11-22 08:41:01 - server.py[line:139]: Test: Loss = 538.3722152709961 / 160 = 3.3648263454437255
+[[31;21mINFO[1;0m]11-22 08:41:01 - runner.py[line:74]: Test on Client 2.
+[[31;21mINFO[1;0m]11-22 08:41:01 - server.py[line:138]: Test: Acc = 43 / 192 = 0.22395833333333334
+[[31;21mINFO[1;0m]11-22 08:41:01 - server.py[line:139]: Test: Loss = 652.7662353515625 / 192 = 3.3998241424560547
+[[31;21mINFO[1;0m]11-22 08:41:01 - runner.py[line:74]: Test on Client 3.
+[[31;21mINFO[1;0m]11-22 08:41:02 - server.py[line:138]: Test: Acc = 51 / 192 = 0.265625
+[[31;21mINFO[1;0m]11-22 08:41:02 - server.py[line:139]: Test: Loss = 666.1471557617188 / 192 = 3.4695164362589517
+[[31;21mINFO[1;0m]11-22 08:41:02 - runner.py[line:74]: Test on Client 4.
+[[31;21mINFO[1;0m]11-22 08:41:02 - server.py[line:138]: Test: Acc = 62 / 192 = 0.3229166666666667
+[[31;21mINFO[1;0m]11-22 08:41:02 - server.py[line:139]: Test: Loss = 622.1544647216797 / 192 = 3.2403878370920816
+[[31;21mINFO[1;0m]11-22 08:41:02 - runner.py[line:74]: Test on Client 5.
+[[31;21mINFO[1;0m]11-22 08:41:03 - server.py[line:138]: Test: Acc = 58 / 160 = 0.3625
+[[31;21mINFO[1;0m]11-22 08:41:03 - server.py[line:139]: Test: Loss = 473.7935256958008 / 160 = 2.961209535598755
+[[31;21mINFO[1;0m]11-22 08:41:03 - runner.py[line:74]: Test on Client 6.
+[[31;21mINFO[1;0m]11-22 08:41:03 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:41:03 - server.py[line:139]: Test: Loss = 600.5760192871094 / 192 = 3.128000100453695
+[[31;21mINFO[1;0m]11-22 08:41:03 - runner.py[line:74]: Test on Client 7.
+[[31;21mINFO[1;0m]11-22 08:41:04 - server.py[line:138]: Test: Acc = 42 / 160 = 0.2625
+[[31;21mINFO[1;0m]11-22 08:41:04 - server.py[line:139]: Test: Loss = 510.52198791503906 / 160 = 3.190762424468994
+[[31;21mINFO[1;0m]11-22 08:41:04 - runner.py[line:74]: Test on Client 8.
+[[31;21mINFO[1;0m]11-22 08:41:04 - server.py[line:138]: Test: Acc = 44 / 192 = 0.22916666666666666
+[[31;21mINFO[1;0m]11-22 08:41:04 - server.py[line:139]: Test: Loss = 647.569465637207 / 192 = 3.37275763352712
+[[31;21mINFO[1;0m]11-22 08:41:04 - runner.py[line:74]: Test on Client 9.
+[[31;21mINFO[1;0m]11-22 08:41:05 - server.py[line:138]: Test: Acc = 50 / 192 = 0.2604166666666667
+[[31;21mINFO[1;0m]11-22 08:41:05 - server.py[line:139]: Test: Loss = 674.5427398681641 / 192 = 3.5132434368133545
+[[31;21mINFO[1;0m]11-22 08:41:05 - runner.py[line:74]: Test on Client 10.
+[[31;21mINFO[1;0m]11-22 08:41:05 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:41:05 - server.py[line:139]: Test: Loss = 631.7472381591797 / 192 = 3.2903501987457275
+[[31;21mINFO[1;0m]11-22 08:41:05 - runner.py[line:74]: Test on Client 11.
+[[31;21mINFO[1;0m]11-22 08:41:06 - server.py[line:138]: Test: Acc = 55 / 160 = 0.34375
+[[31;21mINFO[1;0m]11-22 08:41:06 - server.py[line:139]: Test: Loss = 490.6398239135742 / 160 = 3.066498899459839
+[[31;21mINFO[1;0m]11-22 08:51:39 - main.py[line:46]: Load Data.
+[[31;21mINFO[1;0m]11-22 08:51:39 - dataloader.py[line:11]: Dataset: cifar100.
+[[31;21mINFO[1;0m]11-22 08:51:43 - dataloader.py[line:16]: Data Partition.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:26]: num_tasks: 2.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:27]: num_clients: 12.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:35]: num_classes: 100.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:36]: num_classes_for_task: 100.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:37]: num_classes_disjoint_for_task: 40.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:38]: num_classes_overlap_for_task: 10.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:42]: num_classes_for_client: 20.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - datapartition.py[line:43]: num_classes_disjoint_for_client: 10.
+[[31;21mINFO[1;0m]11-22 08:51:43 - dataloader.py[line:21]: Data Loader.
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:23]: task 0 global: 3034
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:24]: task 0 global: 599
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 0 train data: 1027
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 0 test data: 192
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 1 train data: 978
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 1 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 2 train data: 1003
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 2 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 3 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 3 test data: 195
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 4 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 4 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 5 train data: 1052
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 5 test data: 190
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 6 train data: 1027
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 6 test data: 192
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 7 train data: 978
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 7 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 8 train data: 1003
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 8 test data: 214
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 9 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 9 test data: 195
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 10 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 10 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 0 client 11 train data: 1052
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 0 client 11 test data: 190
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:23]: task 1 global: 2970
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:24]: task 1 global: 594
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 0 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 0 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 1 train data: 991
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 1 test data: 188
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 2 train data: 946
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 2 test data: 202
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 3 train data: 1006
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 3 test data: 215
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 4 train data: 1020
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 4 test data: 199
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 5 train data: 973
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 5 test data: 191
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 6 train data: 1004
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 6 test data: 193
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 7 train data: 991
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 7 test data: 188
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 8 train data: 946
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 8 test data: 202
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 9 train data: 1006
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 9 test data: 215
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 10 train data: 1020
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 10 test data: 199
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:32]: task 1 client 11 train data: 973
+[[33;21mDEBUG[1;0m]11-22 08:51:43 - dataloader.py[line:33]: task 1 client 11 test data: 191
+[[31;21mINFO[1;0m]11-22 08:51:43 - main.py[line:53]: Create Clients.
+[[31;21mINFO[1;0m]11-22 08:51:43 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:43 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:44 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:44 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:44 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:44 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:44 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:45 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:45 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:45 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:45 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:46 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:46 - main.py[line:67]: Create Server.
+[[31;21mINFO[1;0m]11-22 08:51:46 - resnet_client.py[line:17]: Pretrained
+[[31;21mINFO[1;0m]11-22 08:51:46 - main.py[line:79]: Start Task 0.
+[[31;21mINFO[1;0m]11-22 08:51:46 - runner.py[line:39]: Collect Features from Clients.
+[[33;21mDEBUG[1;0m]11-22 08:51:46 - runner.py[line:42]: Client 0 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:50 - runner.py[line:44]: Client 0 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:51:50 - runner.py[line:42]: Client 1 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:51 - runner.py[line:44]: Client 1 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:51:51 - runner.py[line:42]: Client 2 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:51 - runner.py[line:44]: Client 2 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:51:51 - runner.py[line:42]: Client 3 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:52 - runner.py[line:44]: Client 3 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:51:52 - runner.py[line:42]: Client 4 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:53 - runner.py[line:44]: Client 4 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:51:53 - runner.py[line:42]: Client 5 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:54 - runner.py[line:44]: Client 5 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:51:54 - runner.py[line:42]: Client 6 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:54 - runner.py[line:44]: Client 6 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:51:54 - runner.py[line:42]: Client 7 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:55 - runner.py[line:44]: Client 7 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:51:55 - runner.py[line:42]: Client 8 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:56 - runner.py[line:44]: Client 8 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:51:56 - runner.py[line:42]: Client 9 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:57 - runner.py[line:44]: Client 9 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:51:57 - runner.py[line:42]: Client 10 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:57 - runner.py[line:44]: Client 10 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:51:57 - runner.py[line:42]: Client 11 train_data size: 32 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:51:58 - runner.py[line:44]: Client 11 c_feature size: 1024.
+[[33;21mDEBUG[1;0m]11-22 08:52:26 - pyplot.py[line:295]: Loaded backend agg version unknown.
+[[31;21mINFO[1;0m]11-22 08:52:28 - runner.py[line:51]: Pass Features to Server.
+[[31;21mINFO[1;0m]11-22 08:52:28 - runner.py[line:66]: Train on Server.
+[[33;21mDEBUG[1;0m]11-22 08:52:28 - server.py[line:99]: Training accuracy for epoch 0 : 34.02406311035156
+[[31;21mINFO[1;0m]11-22 08:52:28 - server.py[line:103]: (Local Training Epoch: 0 	Loss: 2.639906)
+[[33;21mDEBUG[1;0m]11-22 08:52:28 - server.py[line:99]: Training accuracy for epoch 1 : 51.12800979614258
+[[33;21mDEBUG[1;0m]11-22 08:52:28 - server.py[line:99]: Training accuracy for epoch 2 : 59.792781829833984
+[[33;21mDEBUG[1;0m]11-22 08:52:29 - server.py[line:99]: Training accuracy for epoch 3 : 66.12633514404297
+[[33;21mDEBUG[1;0m]11-22 08:52:29 - server.py[line:99]: Training accuracy for epoch 4 : 70.93081665039062
+[[33;21mDEBUG[1;0m]11-22 08:52:29 - server.py[line:99]: Training accuracy for epoch 5 : 74.13937377929688
+[[33;21mDEBUG[1;0m]11-22 08:52:30 - server.py[line:99]: Training accuracy for epoch 6 : 77.33121490478516
+[[33;21mDEBUG[1;0m]11-22 08:52:30 - server.py[line:99]: Training accuracy for epoch 7 : 79.9632339477539
+[[33;21mDEBUG[1;0m]11-22 08:52:30 - server.py[line:99]: Training accuracy for epoch 8 : 82.28609466552734
+[[33;21mDEBUG[1;0m]11-22 08:52:31 - server.py[line:99]: Training accuracy for epoch 9 : 83.79010772705078
+[[33;21mDEBUG[1;0m]11-22 08:52:31 - server.py[line:99]: Training accuracy for epoch 10 : 85.58656311035156
+[[33;21mDEBUG[1;0m]11-22 08:52:31 - server.py[line:99]: Training accuracy for epoch 11 : 86.346923828125
+[[33;21mDEBUG[1;0m]11-22 08:52:31 - server.py[line:99]: Training accuracy for epoch 12 : 87.48329162597656
+[[33;21mDEBUG[1;0m]11-22 08:52:32 - server.py[line:99]: Training accuracy for epoch 13 : 88.30213928222656
+[[33;21mDEBUG[1;0m]11-22 08:52:32 - server.py[line:99]: Training accuracy for epoch 14 : 89.32987976074219
+[[33;21mDEBUG[1;0m]11-22 08:52:32 - server.py[line:99]: Training accuracy for epoch 15 : 89.58055114746094
+[[33;21mDEBUG[1;0m]11-22 08:52:33 - server.py[line:99]: Training accuracy for epoch 16 : 90.43282318115234
+[[33;21mDEBUG[1;0m]11-22 08:52:33 - server.py[line:99]: Training accuracy for epoch 17 : 90.99264526367188
+[[33;21mDEBUG[1;0m]11-22 08:52:33 - server.py[line:99]: Training accuracy for epoch 18 : 91.41043090820312
+[[33;21mDEBUG[1;0m]11-22 08:52:33 - server.py[line:99]: Training accuracy for epoch 19 : 92.00367736816406
+[[33;21mDEBUG[1;0m]11-22 08:52:34 - server.py[line:99]: Training accuracy for epoch 20 : 92.1123046875
+[[33;21mDEBUG[1;0m]11-22 08:52:34 - server.py[line:99]: Training accuracy for epoch 21 : 92.58856964111328
+[[33;21mDEBUG[1;0m]11-22 08:52:34 - server.py[line:99]: Training accuracy for epoch 22 : 93.00635528564453
+[[33;21mDEBUG[1;0m]11-22 08:52:35 - server.py[line:99]: Training accuracy for epoch 23 : 93.2319564819336
+[[33;21mDEBUG[1;0m]11-22 08:52:35 - server.py[line:99]: Training accuracy for epoch 24 : 93.69151306152344
+[[33;21mDEBUG[1;0m]11-22 08:52:35 - server.py[line:99]: Training accuracy for epoch 25 : 93.65808868408203
+[[33;21mDEBUG[1;0m]11-22 08:52:36 - server.py[line:99]: Training accuracy for epoch 26 : 93.80013275146484
+[[33;21mDEBUG[1;0m]11-22 08:52:36 - server.py[line:99]: Training accuracy for epoch 27 : 94.31818389892578
+[[33;21mDEBUG[1;0m]11-22 08:52:36 - server.py[line:99]: Training accuracy for epoch 28 : 94.13436126708984
+[[33;21mDEBUG[1;0m]11-22 08:52:36 - server.py[line:99]: Training accuracy for epoch 29 : 94.3265380859375
+[[33;21mDEBUG[1;0m]11-22 08:52:37 - server.py[line:99]: Training accuracy for epoch 30 : 94.85294342041016
+[[33;21mDEBUG[1;0m]11-22 08:52:37 - server.py[line:99]: Training accuracy for epoch 31 : 94.903076171875
+[[33;21mDEBUG[1;0m]11-22 08:52:37 - server.py[line:99]: Training accuracy for epoch 32 : 94.7693862915039
+[[33;21mDEBUG[1;0m]11-22 08:52:38 - server.py[line:99]: Training accuracy for epoch 33 : 94.91978454589844
+[[33;21mDEBUG[1;0m]11-22 08:52:38 - server.py[line:99]: Training accuracy for epoch 34 : 95.19552612304688
+[[33;21mDEBUG[1;0m]11-22 08:52:38 - server.py[line:99]: Training accuracy for epoch 35 : 95.41276550292969
+[[33;21mDEBUG[1;0m]11-22 08:52:38 - server.py[line:99]: Training accuracy for epoch 36 : 95.28743743896484
+[[33;21mDEBUG[1;0m]11-22 08:52:39 - server.py[line:99]: Training accuracy for epoch 37 : 95.65508270263672
+[[33;21mDEBUG[1;0m]11-22 08:52:39 - server.py[line:99]: Training accuracy for epoch 38 : 95.63001251220703
+[[33;21mDEBUG[1;0m]11-22 08:52:39 - server.py[line:99]: Training accuracy for epoch 39 : 95.60494995117188
+[[33;21mDEBUG[1;0m]11-22 08:52:40 - server.py[line:99]: Training accuracy for epoch 40 : 95.63001251220703
+[[33;21mDEBUG[1;0m]11-22 08:52:40 - server.py[line:99]: Training accuracy for epoch 41 : 95.98094940185547
+[[33;21mDEBUG[1;0m]11-22 08:52:40 - server.py[line:99]: Training accuracy for epoch 42 : 95.98930358886719
+[[33;21mDEBUG[1;0m]11-22 08:52:41 - server.py[line:99]: Training accuracy for epoch 43 : 95.9224624633789
+[[33;21mDEBUG[1;0m]11-22 08:52:41 - server.py[line:99]: Training accuracy for epoch 44 : 96.00601959228516
+[[33;21mDEBUG[1;0m]11-22 08:52:41 - server.py[line:99]: Training accuracy for epoch 45 : 96.24832916259766
+[[33;21mDEBUG[1;0m]11-22 08:52:41 - server.py[line:99]: Training accuracy for epoch 46 : 96.40708923339844
+[[33;21mDEBUG[1;0m]11-22 08:52:42 - server.py[line:99]: Training accuracy for epoch 47 : 96.23162078857422
+[[33;21mDEBUG[1;0m]11-22 08:52:42 - server.py[line:99]: Training accuracy for epoch 48 : 96.3569564819336
+[[33;21mDEBUG[1;0m]11-22 08:52:42 - server.py[line:99]: Training accuracy for epoch 49 : 96.42379760742188
+[[33;21mDEBUG[1;0m]11-22 08:52:43 - server.py[line:99]: Training accuracy for epoch 50 : 96.34024047851562
+[[31;21mINFO[1;0m]11-22 08:52:43 - server.py[line:103]: (Local Training Epoch: 50 	Loss: 1.558235)
+[[33;21mDEBUG[1;0m]11-22 08:52:43 - server.py[line:99]: Training accuracy for epoch 51 : 96.39037322998047
+[[33;21mDEBUG[1;0m]11-22 08:52:43 - server.py[line:99]: Training accuracy for epoch 52 : 96.48228454589844
+[[33;21mDEBUG[1;0m]11-22 08:52:43 - server.py[line:99]: Training accuracy for epoch 53 : 96.57420349121094
+[[33;21mDEBUG[1;0m]11-22 08:52:44 - server.py[line:99]: Training accuracy for epoch 54 : 96.4990005493164
+[[33;21mDEBUG[1;0m]11-22 08:52:44 - server.py[line:99]: Training accuracy for epoch 55 : 96.64939880371094
+[[33;21mDEBUG[1;0m]11-22 08:52:44 - server.py[line:99]: Training accuracy for epoch 56 : 96.6326904296875
+[[33;21mDEBUG[1;0m]11-22 08:52:45 - server.py[line:99]: Training accuracy for epoch 57 : 96.6326904296875
+[[33;21mDEBUG[1;0m]11-22 08:52:45 - server.py[line:99]: Training accuracy for epoch 58 : 96.6661148071289
+[[33;21mDEBUG[1;0m]11-22 08:52:45 - server.py[line:99]: Training accuracy for epoch 59 : 96.69953155517578
+[[33;21mDEBUG[1;0m]11-22 08:52:46 - server.py[line:99]: Training accuracy for epoch 60 : 96.73295593261719
+[[33;21mDEBUG[1;0m]11-22 08:52:46 - server.py[line:99]: Training accuracy for epoch 61 : 96.74966430664062
+[[33;21mDEBUG[1;0m]11-22 08:52:46 - server.py[line:99]: Training accuracy for epoch 62 : 96.72460174560547
+[[33;21mDEBUG[1;0m]11-22 08:52:46 - server.py[line:99]: Training accuracy for epoch 63 : 96.89171600341797
+[[33;21mDEBUG[1;0m]11-22 08:52:47 - server.py[line:99]: Training accuracy for epoch 64 : 96.90007019042969
+[[33;21mDEBUG[1;0m]11-22 08:52:47 - server.py[line:99]: Training accuracy for epoch 65 : 97.02540588378906
+[[33;21mDEBUG[1;0m]11-22 08:52:47 - server.py[line:99]: Training accuracy for epoch 66 : 96.83322143554688
+[[33;21mDEBUG[1;0m]11-22 08:52:48 - server.py[line:99]: Training accuracy for epoch 67 : 96.79144287109375
+[[33;21mDEBUG[1;0m]11-22 08:52:48 - server.py[line:99]: Training accuracy for epoch 68 : 96.82486724853516
+[[33;21mDEBUG[1;0m]11-22 08:52:48 - server.py[line:99]: Training accuracy for epoch 69 : 96.96691131591797
+[[33;21mDEBUG[1;0m]11-22 08:52:48 - server.py[line:99]: Training accuracy for epoch 70 : 96.99198150634766
+[[33;21mDEBUG[1;0m]11-22 08:52:49 - server.py[line:99]: Training accuracy for epoch 71 : 96.7413101196289
+[[33;21mDEBUG[1;0m]11-22 08:52:49 - server.py[line:99]: Training accuracy for epoch 72 : 96.85829162597656
+[[33;21mDEBUG[1;0m]11-22 08:52:49 - server.py[line:99]: Training accuracy for epoch 73 : 97.00033569335938
+[[33;21mDEBUG[1;0m]11-22 08:52:50 - server.py[line:99]: Training accuracy for epoch 74 : 96.84993743896484
+[[33;21mDEBUG[1;0m]11-22 08:52:50 - server.py[line:99]: Training accuracy for epoch 75 : 97.09224700927734
+[[33;21mDEBUG[1;0m]11-22 08:52:50 - server.py[line:99]: Training accuracy for epoch 76 : 97.15909576416016
+[[33;21mDEBUG[1;0m]11-22 08:52:51 - server.py[line:99]: Training accuracy for epoch 77 : 97.00033569335938
+[[33;21mDEBUG[1;0m]11-22 08:52:51 - server.py[line:99]: Training accuracy for epoch 78 : 97.30949401855469
+[[33;21mDEBUG[1;0m]11-22 08:52:51 - server.py[line:99]: Training accuracy for epoch 79 : 97.08389282226562
+[[33;21mDEBUG[1;0m]11-22 08:52:51 - server.py[line:99]: Training accuracy for epoch 80 : 96.97526550292969
+[[33;21mDEBUG[1;0m]11-22 08:52:52 - server.py[line:99]: Training accuracy for epoch 81 : 97.0086898803711
+[[33;21mDEBUG[1;0m]11-22 08:52:52 - server.py[line:99]: Training accuracy for epoch 82 : 97.0755386352539
+[[33;21mDEBUG[1;0m]11-22 08:52:52 - server.py[line:99]: Training accuracy for epoch 83 : 97.14237976074219
+[[33;21mDEBUG[1;0m]11-22 08:52:53 - server.py[line:99]: Training accuracy for epoch 84 : 97.23429107666016
+[[33;21mDEBUG[1;0m]11-22 08:52:53 - server.py[line:99]: Training accuracy for epoch 85 : 97.11731719970703
+[[33;21mDEBUG[1;0m]11-22 08:52:53 - server.py[line:99]: Training accuracy for epoch 86 : 97.1507339477539
+[[33;21mDEBUG[1;0m]11-22 08:52:53 - server.py[line:99]: Training accuracy for epoch 87 : 97.18415832519531
+[[33;21mDEBUG[1;0m]11-22 08:52:54 - server.py[line:99]: Training accuracy for epoch 88 : 97.16744995117188
+[[33;21mDEBUG[1;0m]11-22 08:52:54 - server.py[line:99]: Training accuracy for epoch 89 : 97.209228515625
+[[33;21mDEBUG[1;0m]11-22 08:52:54 - server.py[line:99]: Training accuracy for epoch 90 : 97.24264526367188
+[[33;21mDEBUG[1;0m]11-22 08:52:55 - server.py[line:99]: Training accuracy for epoch 91 : 97.3178482055664
+[[33;21mDEBUG[1;0m]11-22 08:52:55 - server.py[line:99]: Training accuracy for epoch 92 : 97.11731719970703
+[[33;21mDEBUG[1;0m]11-22 08:52:55 - server.py[line:99]: Training accuracy for epoch 93 : 97.25100708007812
+[[33;21mDEBUG[1;0m]11-22 08:52:56 - server.py[line:99]: Training accuracy for epoch 94 : 97.32620239257812
+[[33;21mDEBUG[1;0m]11-22 08:52:56 - server.py[line:99]: Training accuracy for epoch 95 : 97.21758270263672
+[[33;21mDEBUG[1;0m]11-22 08:52:56 - server.py[line:99]: Training accuracy for epoch 96 : 97.24264526367188
+[[33;21mDEBUG[1;0m]11-22 08:52:56 - server.py[line:99]: Training accuracy for epoch 97 : 97.13402557373047
+[[33;21mDEBUG[1;0m]11-22 08:52:57 - server.py[line:99]: Training accuracy for epoch 98 : 97.24264526367188
+[[33;21mDEBUG[1;0m]11-22 08:52:57 - server.py[line:99]: Training accuracy for epoch 99 : 97.19251251220703
+[[31;21mINFO[1;0m]11-22 08:52:57 - runner.py[line:70]: Test on Server.
+[[31;21mINFO[1;0m]11-22 08:52:57 - runner.py[line:72]: Test on Task 0.
+[[31;21mINFO[1;0m]11-22 08:52:57 - runner.py[line:74]: Test on Client 0.
+[[31;21mINFO[1;0m]11-22 08:52:58 - server.py[line:138]: Test: Acc = 56 / 192 = 0.2916666666666667
+[[31;21mINFO[1;0m]11-22 08:52:58 - server.py[line:139]: Test: Loss = 647.9299011230469 / 192 = 3.3746349016825357
+[[31;21mINFO[1;0m]11-22 08:52:58 - runner.py[line:74]: Test on Client 1.
+[[31;21mINFO[1;0m]11-22 08:52:58 - server.py[line:138]: Test: Acc = 64 / 192 = 0.3333333333333333
+[[31;21mINFO[1;0m]11-22 08:52:58 - server.py[line:139]: Test: Loss = 595.2026748657227 / 192 = 3.1000139315923056
+[[31;21mINFO[1;0m]11-22 08:52:58 - runner.py[line:74]: Test on Client 2.
+[[31;21mINFO[1;0m]11-22 08:52:59 - server.py[line:138]: Test: Acc = 74 / 192 = 0.3854166666666667
+[[31;21mINFO[1;0m]11-22 08:52:59 - server.py[line:139]: Test: Loss = 574.9682083129883 / 192 = 2.9946260849634805
+[[31;21mINFO[1;0m]11-22 08:52:59 - runner.py[line:74]: Test on Client 3.
+[[31;21mINFO[1;0m]11-22 08:52:59 - server.py[line:138]: Test: Acc = 64 / 192 = 0.3333333333333333
+[[31;21mINFO[1;0m]11-22 08:52:59 - server.py[line:139]: Test: Loss = 590.3913116455078 / 192 = 3.0749547481536865
+[[31;21mINFO[1;0m]11-22 08:52:59 - runner.py[line:74]: Test on Client 4.
+[[31;21mINFO[1;0m]11-22 08:53:00 - server.py[line:138]: Test: Acc = 71 / 192 = 0.3697916666666667
+[[31;21mINFO[1;0m]11-22 08:53:00 - server.py[line:139]: Test: Loss = 545.2371444702148 / 192 = 2.839776794115702
+[[31;21mINFO[1;0m]11-22 08:53:00 - runner.py[line:74]: Test on Client 5.
+[[31;21mINFO[1;0m]11-22 08:53:01 - server.py[line:138]: Test: Acc = 55 / 160 = 0.34375
+[[31;21mINFO[1;0m]11-22 08:53:01 - server.py[line:139]: Test: Loss = 489.5083236694336 / 160 = 3.05942702293396
+[[31;21mINFO[1;0m]11-22 08:53:01 - runner.py[line:74]: Test on Client 6.
+[[31;21mINFO[1;0m]11-22 08:53:01 - server.py[line:138]: Test: Acc = 56 / 192 = 0.2916666666666667
+[[31;21mINFO[1;0m]11-22 08:53:01 - server.py[line:139]: Test: Loss = 647.9299011230469 / 192 = 3.3746349016825357
+[[31;21mINFO[1;0m]11-22 08:53:01 - runner.py[line:74]: Test on Client 7.
+[[31;21mINFO[1;0m]11-22 08:53:02 - server.py[line:138]: Test: Acc = 69 / 192 = 0.359375
+[[31;21mINFO[1;0m]11-22 08:53:02 - server.py[line:139]: Test: Loss = 578.4884414672852 / 192 = 3.0129606326421103
+[[31;21mINFO[1;0m]11-22 08:53:02 - runner.py[line:74]: Test on Client 8.
+[[31;21mINFO[1;0m]11-22 08:53:02 - server.py[line:138]: Test: Acc = 74 / 192 = 0.3854166666666667
+[[31;21mINFO[1;0m]11-22 08:53:02 - server.py[line:139]: Test: Loss = 564.3295440673828 / 192 = 2.939216375350952
+[[31;21mINFO[1;0m]11-22 08:53:02 - runner.py[line:74]: Test on Client 9.
+[[31;21mINFO[1;0m]11-22 08:53:03 - server.py[line:138]: Test: Acc = 64 / 192 = 0.3333333333333333
+[[31;21mINFO[1;0m]11-22 08:53:03 - server.py[line:139]: Test: Loss = 593.0951690673828 / 192 = 3.0890373388926187
+[[31;21mINFO[1;0m]11-22 08:53:03 - runner.py[line:74]: Test on Client 10.
+[[31;21mINFO[1;0m]11-22 08:53:03 - server.py[line:138]: Test: Acc = 72 / 192 = 0.375
+[[31;21mINFO[1;0m]11-22 08:53:03 - server.py[line:139]: Test: Loss = 543.470100402832 / 192 = 2.8305734395980835
+[[31;21mINFO[1;0m]11-22 08:53:03 - runner.py[line:74]: Test on Client 11.
+[[31;21mINFO[1;0m]11-22 08:53:04 - server.py[line:138]: Test: Acc = 52 / 160 = 0.325
+[[31;21mINFO[1;0m]11-22 08:53:04 - server.py[line:139]: Test: Loss = 508.49158477783203 / 160 = 3.1780724048614504
+[[31;21mINFO[1;0m]11-22 08:53:04 - main.py[line:79]: Start Task 1.
+[[31;21mINFO[1;0m]11-22 08:53:04 - runner.py[line:39]: Collect Features from Clients.
+[[33;21mDEBUG[1;0m]11-22 08:53:04 - runner.py[line:42]: Client 0 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:05 - runner.py[line:44]: Client 0 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:53:05 - runner.py[line:42]: Client 1 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:06 - runner.py[line:44]: Client 1 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:53:06 - runner.py[line:42]: Client 2 train_data size: 29 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:06 - runner.py[line:44]: Client 2 c_feature size: 928.
+[[33;21mDEBUG[1;0m]11-22 08:53:06 - runner.py[line:42]: Client 3 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:07 - runner.py[line:44]: Client 3 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:53:07 - runner.py[line:42]: Client 4 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:08 - runner.py[line:44]: Client 4 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:53:08 - runner.py[line:42]: Client 5 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:09 - runner.py[line:44]: Client 5 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:53:09 - runner.py[line:42]: Client 6 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:09 - runner.py[line:44]: Client 6 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:53:09 - runner.py[line:42]: Client 7 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:10 - runner.py[line:44]: Client 7 c_feature size: 960.
+[[33;21mDEBUG[1;0m]11-22 08:53:10 - runner.py[line:42]: Client 8 train_data size: 29 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:11 - runner.py[line:44]: Client 8 c_feature size: 928.
+[[33;21mDEBUG[1;0m]11-22 08:53:11 - runner.py[line:42]: Client 9 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:12 - runner.py[line:44]: Client 9 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:53:12 - runner.py[line:42]: Client 10 train_data size: 31 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:12 - runner.py[line:44]: Client 10 c_feature size: 992.
+[[33;21mDEBUG[1;0m]11-22 08:53:12 - runner.py[line:42]: Client 11 train_data size: 30 (batchsize = 32).
+[[33;21mDEBUG[1;0m]11-22 08:53:13 - runner.py[line:44]: Client 11 c_feature size: 960.
+[[31;21mINFO[1;0m]11-22 08:53:41 - runner.py[line:51]: Pass Features to Server.
+[[31;21mINFO[1;0m]11-22 08:53:41 - runner.py[line:66]: Train on Server.
+[[33;21mDEBUG[1;0m]11-22 08:53:42 - server.py[line:99]: Training accuracy for epoch 0 : 67.5135498046875
+[[31;21mINFO[1;0m]11-22 08:53:42 - server.py[line:103]: (Local Training Epoch: 0 	Loss: 1.623753)
+[[33;21mDEBUG[1;0m]11-22 08:53:42 - server.py[line:99]: Training accuracy for epoch 1 : 73.45443725585938
+[[33;21mDEBUG[1;0m]11-22 08:53:43 - server.py[line:99]: Training accuracy for epoch 2 : 76.43123626708984
+[[33;21mDEBUG[1;0m]11-22 08:53:43 - server.py[line:99]: Training accuracy for epoch 3 : 78.28167724609375
+[[33;21mDEBUG[1;0m]11-22 08:53:44 - server.py[line:99]: Training accuracy for epoch 4 : 79.87381744384766
+[[33;21mDEBUG[1;0m]11-22 08:53:45 - server.py[line:99]: Training accuracy for epoch 5 : 80.86890411376953
+[[33;21mDEBUG[1;0m]11-22 08:53:45 - server.py[line:99]: Training accuracy for epoch 6 : 81.91480255126953
+[[33;21mDEBUG[1;0m]11-22 08:53:46 - server.py[line:99]: Training accuracy for epoch 7 : 82.24508666992188
+[[33;21mDEBUG[1;0m]11-22 08:53:46 - server.py[line:99]: Training accuracy for epoch 8 : 82.95223999023438
+[[33;21mDEBUG[1;0m]11-22 08:53:47 - server.py[line:99]: Training accuracy for epoch 9 : 83.11737823486328
+[[33;21mDEBUG[1;0m]11-22 08:53:47 - server.py[line:99]: Training accuracy for epoch 10 : 83.49000549316406
+[[33;21mDEBUG[1;0m]11-22 08:53:48 - server.py[line:99]: Training accuracy for epoch 11 : 84.09552764892578
+[[33;21mDEBUG[1;0m]11-22 08:53:49 - server.py[line:99]: Training accuracy for epoch 12 : 84.2013931274414
+[[33;21mDEBUG[1;0m]11-22 08:53:49 - server.py[line:99]: Training accuracy for epoch 13 : 84.41734313964844
+[[33;21mDEBUG[1;0m]11-22 08:53:50 - server.py[line:99]: Training accuracy for epoch 14 : 84.63753509521484
+[[33;21mDEBUG[1;0m]11-22 08:53:50 - server.py[line:99]: Training accuracy for epoch 15 : 84.98052215576172
+[[33;21mDEBUG[1;0m]11-22 08:53:51 - server.py[line:99]: Training accuracy for epoch 16 : 84.90007019042969
+[[33;21mDEBUG[1;0m]11-22 08:53:51 - server.py[line:99]: Training accuracy for epoch 17 : 85.03980255126953
+[[33;21mDEBUG[1;0m]11-22 08:53:52 - server.py[line:99]: Training accuracy for epoch 18 : 85.2557601928711
+[[33;21mDEBUG[1;0m]11-22 08:53:53 - server.py[line:99]: Training accuracy for epoch 19 : 85.26422882080078
+[[33;21mDEBUG[1;0m]11-22 08:53:53 - server.py[line:99]: Training accuracy for epoch 20 : 85.30657196044922
+[[33;21mDEBUG[1;0m]11-22 08:53:54 - server.py[line:99]: Training accuracy for epoch 21 : 85.63685607910156
+[[33;21mDEBUG[1;0m]11-22 08:53:54 - server.py[line:99]: Training accuracy for epoch 22 : 85.56063842773438
+[[33;21mDEBUG[1;0m]11-22 08:53:55 - server.py[line:99]: Training accuracy for epoch 23 : 85.69190216064453
+[[33;21mDEBUG[1;0m]11-22 08:53:56 - server.py[line:99]: Training accuracy for epoch 24 : 85.85704803466797
+[[33;21mDEBUG[1;0m]11-22 08:53:56 - server.py[line:99]: Training accuracy for epoch 25 : 85.78506469726562
+[[33;21mDEBUG[1;0m]11-22 08:53:57 - server.py[line:99]: Training accuracy for epoch 26 : 85.86551666259766
+[[33;21mDEBUG[1;0m]11-22 08:53:57 - server.py[line:99]: Training accuracy for epoch 27 : 85.95020294189453
+[[33;21mDEBUG[1;0m]11-22 08:53:58 - server.py[line:99]: Training accuracy for epoch 28 : 85.86551666259766
+[[33;21mDEBUG[1;0m]11-22 08:53:58 - server.py[line:99]: Training accuracy for epoch 29 : 85.82317352294922
+[[33;21mDEBUG[1;0m]11-22 08:53:59 - server.py[line:99]: Training accuracy for epoch 30 : 86.1661605834961
+[[33;21mDEBUG[1;0m]11-22 08:54:00 - server.py[line:99]: Training accuracy for epoch 31 : 86.03489685058594
+[[33;21mDEBUG[1;0m]11-22 08:54:00 - server.py[line:99]: Training accuracy for epoch 32 : 85.85704803466797
+[[33;21mDEBUG[1;0m]11-22 08:54:01 - server.py[line:99]: Training accuracy for epoch 33 : 86.04759979248047
+[[33;21mDEBUG[1;0m]11-22 08:54:01 - server.py[line:99]: Training accuracy for epoch 34 : 86.17039489746094
+[[33;21mDEBUG[1;0m]11-22 08:54:02 - server.py[line:99]: Training accuracy for epoch 35 : 86.12381744384766
+[[33;21mDEBUG[1;0m]11-22 08:54:02 - server.py[line:99]: Training accuracy for epoch 36 : 86.25084686279297
+[[33;21mDEBUG[1;0m]11-22 08:54:03 - server.py[line:99]: Training accuracy for epoch 37 : 86.1576919555664
+[[33;21mDEBUG[1;0m]11-22 08:54:04 - server.py[line:99]: Training accuracy for epoch 38 : 86.26778411865234
+[[33;21mDEBUG[1;0m]11-22 08:54:04 - server.py[line:99]: Training accuracy for epoch 39 : 86.12381744384766
+[[33;21mDEBUG[1;0m]11-22 08:54:05 - server.py[line:99]: Training accuracy for epoch 40 : 86.4159927368164
+[[33;21mDEBUG[1;0m]11-22 08:54:05 - server.py[line:99]: Training accuracy for epoch 41 : 86.06877136230469
+[[33;21mDEBUG[1;0m]11-22 08:54:06 - server.py[line:99]: Training accuracy for epoch 42 : 86.4541015625
+[[33;21mDEBUG[1;0m]11-22 08:54:06 - server.py[line:99]: Training accuracy for epoch 43 : 86.2254409790039
+[[33;21mDEBUG[1;0m]11-22 08:54:07 - server.py[line:99]: Training accuracy for epoch 44 : 86.3016586303711
+[[33;21mDEBUG[1;0m]11-22 08:54:08 - server.py[line:99]: Training accuracy for epoch 45 : 86.14922332763672
+[[33;21mDEBUG[1;0m]11-22 08:54:08 - server.py[line:99]: Training accuracy for epoch 46 : 86.4541015625
+[[33;21mDEBUG[1;0m]11-22 08:54:09 - server.py[line:99]: Training accuracy for epoch 47 : 86.14922332763672
+[[33;21mDEBUG[1;0m]11-22 08:54:09 - server.py[line:99]: Training accuracy for epoch 48 : 86.21273803710938
+[[33;21mDEBUG[1;0m]11-22 08:54:10 - server.py[line:99]: Training accuracy for epoch 49 : 86.19580078125
+[[33;21mDEBUG[1;0m]11-22 08:54:10 - server.py[line:99]: Training accuracy for epoch 50 : 86.36094665527344
+[[31;21mINFO[1;0m]11-22 08:54:10 - server.py[line:103]: (Local Training Epoch: 50 	Loss: 1.219280)
+[[33;21mDEBUG[1;0m]11-22 08:54:11 - server.py[line:99]: Training accuracy for epoch 51 : 86.49644470214844
+[[33;21mDEBUG[1;0m]11-22 08:54:12 - server.py[line:99]: Training accuracy for epoch 52 : 86.17886352539062
+[[33;21mDEBUG[1;0m]11-22 08:54:12 - server.py[line:99]: Training accuracy for epoch 53 : 86.31436157226562
+[[33;21mDEBUG[1;0m]11-22 08:54:13 - server.py[line:99]: Training accuracy for epoch 54 : 86.5599594116211
+[[33;21mDEBUG[1;0m]11-22 08:54:13 - server.py[line:99]: Training accuracy for epoch 55 : 86.50914764404297
+[[33;21mDEBUG[1;0m]11-22 08:54:14 - server.py[line:99]: Training accuracy for epoch 56 : 86.39482116699219
+[[33;21mDEBUG[1;0m]11-22 08:54:14 - server.py[line:99]: Training accuracy for epoch 57 : 86.39058685302734
+[[33;21mDEBUG[1;0m]11-22 08:54:15 - server.py[line:99]: Training accuracy for epoch 58 : 86.56419372558594
+[[33;21mDEBUG[1;0m]11-22 08:54:16 - server.py[line:99]: Training accuracy for epoch 59 : 86.52608489990234
+[[33;21mDEBUG[1;0m]11-22 08:54:16 - server.py[line:99]: Training accuracy for epoch 60 : 86.42869567871094
+[[33;21mDEBUG[1;0m]11-22 08:54:17 - server.py[line:99]: Training accuracy for epoch 61 : 86.5599594116211
+[[33;21mDEBUG[1;0m]11-22 08:54:17 - server.py[line:99]: Training accuracy for epoch 62 : 86.55572509765625
+[[33;21mDEBUG[1;0m]11-22 08:54:18 - server.py[line:99]: Training accuracy for epoch 63 : 86.55572509765625
+[[33;21mDEBUG[1;0m]11-22 08:54:18 - server.py[line:99]: Training accuracy for epoch 64 : 86.58113098144531
+[[33;21mDEBUG[1;0m]11-22 08:54:19 - server.py[line:99]: Training accuracy for epoch 65 : 86.31859588623047
+[[33;21mDEBUG[1;0m]11-22 08:54:20 - server.py[line:99]: Training accuracy for epoch 66 : 86.35247802734375
+[[33;21mDEBUG[1;0m]11-22 08:54:20 - server.py[line:99]: Training accuracy for epoch 67 : 86.26778411865234
+[[33;21mDEBUG[1;0m]11-22 08:54:21 - server.py[line:99]: Training accuracy for epoch 68 : 86.64464569091797
+[[33;21mDEBUG[1;0m]11-22 08:54:21 - server.py[line:99]: Training accuracy for epoch 69 : 86.58113098144531
+[[33;21mDEBUG[1;0m]11-22 08:54:22 - server.py[line:99]: Training accuracy for epoch 70 : 86.46680450439453
+[[33;21mDEBUG[1;0m]11-22 08:54:22 - server.py[line:99]: Training accuracy for epoch 71 : 86.36941528320312
+[[33;21mDEBUG[1;0m]11-22 08:54:23 - server.py[line:99]: Training accuracy for epoch 72 : 86.31012725830078
+[[33;21mDEBUG[1;0m]11-22 08:54:24 - server.py[line:99]: Training accuracy for epoch 73 : 86.31436157226562
+[[33;21mDEBUG[1;0m]11-22 08:54:24 - server.py[line:99]: Training accuracy for epoch 74 : 86.47950744628906
+[[33;21mDEBUG[1;0m]11-22 08:54:25 - server.py[line:99]: Training accuracy for epoch 75 : 86.50914764404297
+[[33;21mDEBUG[1;0m]11-22 08:54:25 - server.py[line:99]: Training accuracy for epoch 76 : 86.43716430664062
+[[33;21mDEBUG[1;0m]11-22 08:54:26 - server.py[line:99]: Training accuracy for epoch 77 : 86.40328979492188
+[[33;21mDEBUG[1;0m]11-22 08:54:26 - server.py[line:99]: Training accuracy for epoch 78 : 86.4244613647461
+[[33;21mDEBUG[1;0m]11-22 08:54:27 - server.py[line:99]: Training accuracy for epoch 79 : 86.61500549316406
+[[33;21mDEBUG[1;0m]11-22 08:54:28 - server.py[line:99]: Training accuracy for epoch 80 : 86.59806823730469
+[[33;21mDEBUG[1;0m]11-22 08:54:28 - server.py[line:99]: Training accuracy for epoch 81 : 86.6827621459961
+[[33;21mDEBUG[1;0m]11-22 08:54:29 - server.py[line:99]: Training accuracy for epoch 82 : 86.28895568847656
+[[33;21mDEBUG[1;0m]11-22 08:54:29 - server.py[line:99]: Training accuracy for epoch 83 : 86.46257019042969
+[[33;21mDEBUG[1;0m]11-22 08:54:30 - server.py[line:99]: Training accuracy for epoch 84 : 86.4541015625
+[[33;21mDEBUG[1;0m]11-22 08:54:30 - server.py[line:99]: Training accuracy for epoch 85 : 86.50914764404297
+[[33;21mDEBUG[1;0m]11-22 08:54:31 - server.py[line:99]: Training accuracy for epoch 86 : 86.44986724853516
+[[33;21mDEBUG[1;0m]11-22 08:54:32 - server.py[line:99]: Training accuracy for epoch 87 : 86.38211822509766
+[[33;21mDEBUG[1;0m]11-22 08:54:32 - server.py[line:99]: Training accuracy for epoch 88 : 86.51761627197266
+[[33;21mDEBUG[1;0m]11-22 08:54:33 - server.py[line:99]: Training accuracy for epoch 89 : 86.36094665527344
+[[33;21mDEBUG[1;0m]11-22 08:54:33 - server.py[line:99]: Training accuracy for epoch 90 : 86.43292999267578
+[[33;21mDEBUG[1;0m]11-22 08:54:34 - server.py[line:99]: Training accuracy for epoch 91 : 86.69123077392578
+[[33;21mDEBUG[1;0m]11-22 08:54:34 - server.py[line:99]: Training accuracy for epoch 92 : 86.58113098144531
+[[33;21mDEBUG[1;0m]11-22 08:54:35 - server.py[line:99]: Training accuracy for epoch 93 : 86.5218505859375
+[[33;21mDEBUG[1;0m]11-22 08:54:36 - server.py[line:99]: Training accuracy for epoch 94 : 86.46257019042969
+[[33;21mDEBUG[1;0m]11-22 08:54:36 - server.py[line:99]: Training accuracy for epoch 95 : 86.52608489990234
+[[33;21mDEBUG[1;0m]11-22 08:54:37 - server.py[line:99]: Training accuracy for epoch 96 : 86.80555725097656
+[[33;21mDEBUG[1;0m]11-22 08:54:37 - server.py[line:99]: Training accuracy for epoch 97 : 86.24661254882812
+[[33;21mDEBUG[1;0m]11-22 08:54:38 - server.py[line:99]: Training accuracy for epoch 98 : 86.46257019042969
+[[33;21mDEBUG[1;0m]11-22 08:54:38 - server.py[line:99]: Training accuracy for epoch 99 : 86.39058685302734
+[[31;21mINFO[1;0m]11-22 08:54:38 - runner.py[line:70]: Test on Server.
+[[31;21mINFO[1;0m]11-22 08:54:38 - runner.py[line:72]: Test on Task 0.
+[[31;21mINFO[1;0m]11-22 08:54:38 - runner.py[line:74]: Test on Client 0.
+[[31;21mINFO[1;0m]11-22 08:54:39 - server.py[line:138]: Test: Acc = 46 / 192 = 0.23958333333333334
+[[31;21mINFO[1;0m]11-22 08:54:39 - server.py[line:139]: Test: Loss = 681.6498489379883 / 192 = 3.5502596298853555
+[[31;21mINFO[1;0m]11-22 08:54:39 - runner.py[line:74]: Test on Client 1.
+[[31;21mINFO[1;0m]11-22 08:54:40 - server.py[line:138]: Test: Acc = 63 / 192 = 0.328125
+[[31;21mINFO[1;0m]11-22 08:54:40 - server.py[line:139]: Test: Loss = 613.5664825439453 / 192 = 3.1956587632497153
+[[31;21mINFO[1;0m]11-22 08:54:40 - runner.py[line:74]: Test on Client 2.
+[[31;21mINFO[1;0m]11-22 08:54:40 - server.py[line:138]: Test: Acc = 60 / 192 = 0.3125
+[[31;21mINFO[1;0m]11-22 08:54:40 - server.py[line:139]: Test: Loss = 605.5876083374023 / 192 = 3.1541021267573037
+[[31;21mINFO[1;0m]11-22 08:54:40 - runner.py[line:74]: Test on Client 3.
+[[31;21mINFO[1;0m]11-22 08:54:41 - server.py[line:138]: Test: Acc = 51 / 192 = 0.265625
+[[31;21mINFO[1;0m]11-22 08:54:41 - server.py[line:139]: Test: Loss = 652.9184951782227 / 192 = 3.400617162386576
+[[31;21mINFO[1;0m]11-22 08:54:41 - runner.py[line:74]: Test on Client 4.
+[[31;21mINFO[1;0m]11-22 08:54:41 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:54:41 - server.py[line:139]: Test: Loss = 602.1735534667969 / 192 = 3.1363205909729004
+[[31;21mINFO[1;0m]11-22 08:54:41 - runner.py[line:74]: Test on Client 5.
+[[31;21mINFO[1;0m]11-22 08:54:42 - server.py[line:138]: Test: Acc = 46 / 160 = 0.2875
+[[31;21mINFO[1;0m]11-22 08:54:42 - server.py[line:139]: Test: Loss = 514.1266860961914 / 160 = 3.213291788101196
+[[31;21mINFO[1;0m]11-22 08:54:42 - runner.py[line:74]: Test on Client 6.
+[[31;21mINFO[1;0m]11-22 08:54:42 - server.py[line:138]: Test: Acc = 46 / 192 = 0.23958333333333334
+[[31;21mINFO[1;0m]11-22 08:54:42 - server.py[line:139]: Test: Loss = 681.6498718261719 / 192 = 3.550259749094645
+[[31;21mINFO[1;0m]11-22 08:54:42 - runner.py[line:74]: Test on Client 7.
+[[31;21mINFO[1;0m]11-22 08:54:43 - server.py[line:138]: Test: Acc = 57 / 192 = 0.296875
+[[31;21mINFO[1;0m]11-22 08:54:43 - server.py[line:139]: Test: Loss = 628.902946472168 / 192 = 3.2755361795425415
+[[31;21mINFO[1;0m]11-22 08:54:43 - runner.py[line:74]: Test on Client 8.
+[[31;21mINFO[1;0m]11-22 08:54:43 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:54:43 - server.py[line:139]: Test: Loss = 621.4445724487305 / 192 = 3.2366904815038047
+[[31;21mINFO[1;0m]11-22 08:54:43 - runner.py[line:74]: Test on Client 9.
+[[31;21mINFO[1;0m]11-22 08:54:44 - server.py[line:138]: Test: Acc = 52 / 192 = 0.2708333333333333
+[[31;21mINFO[1;0m]11-22 08:54:44 - server.py[line:139]: Test: Loss = 642.9630508422852 / 192 = 3.3487658898035684
+[[31;21mINFO[1;0m]11-22 08:54:44 - runner.py[line:74]: Test on Client 10.
+[[31;21mINFO[1;0m]11-22 08:54:45 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:54:45 - server.py[line:139]: Test: Loss = 597.9256210327148 / 192 = 3.114195942878723
+[[31;21mINFO[1;0m]11-22 08:54:45 - runner.py[line:74]: Test on Client 11.
+[[31;21mINFO[1;0m]11-22 08:54:45 - server.py[line:138]: Test: Acc = 44 / 160 = 0.275
+[[31;21mINFO[1;0m]11-22 08:54:45 - server.py[line:139]: Test: Loss = 512.0405807495117 / 160 = 3.200253629684448
+[[31;21mINFO[1;0m]11-22 08:54:45 - runner.py[line:72]: Test on Task 1.
+[[31;21mINFO[1;0m]11-22 08:54:45 - runner.py[line:74]: Test on Client 0.
+[[31;21mINFO[1;0m]11-22 08:54:46 - server.py[line:138]: Test: Acc = 60 / 192 = 0.3125
+[[31;21mINFO[1;0m]11-22 08:54:46 - server.py[line:139]: Test: Loss = 604.319953918457 / 192 = 3.147499759991964
+[[31;21mINFO[1;0m]11-22 08:54:46 - runner.py[line:74]: Test on Client 1.
+[[31;21mINFO[1;0m]11-22 08:54:46 - server.py[line:138]: Test: Acc = 37 / 160 = 0.23125
+[[31;21mINFO[1;0m]11-22 08:54:46 - server.py[line:139]: Test: Loss = 538.3722152709961 / 160 = 3.3648263454437255
+[[31;21mINFO[1;0m]11-22 08:54:46 - runner.py[line:74]: Test on Client 2.
+[[31;21mINFO[1;0m]11-22 08:54:47 - server.py[line:138]: Test: Acc = 43 / 192 = 0.22395833333333334
+[[31;21mINFO[1;0m]11-22 08:54:47 - server.py[line:139]: Test: Loss = 652.7662353515625 / 192 = 3.3998241424560547
+[[31;21mINFO[1;0m]11-22 08:54:47 - runner.py[line:74]: Test on Client 3.
+[[31;21mINFO[1;0m]11-22 08:54:48 - server.py[line:138]: Test: Acc = 51 / 192 = 0.265625
+[[31;21mINFO[1;0m]11-22 08:54:48 - server.py[line:139]: Test: Loss = 666.1471557617188 / 192 = 3.4695164362589517
+[[31;21mINFO[1;0m]11-22 08:54:48 - runner.py[line:74]: Test on Client 4.
+[[31;21mINFO[1;0m]11-22 08:54:48 - server.py[line:138]: Test: Acc = 62 / 192 = 0.3229166666666667
+[[31;21mINFO[1;0m]11-22 08:54:48 - server.py[line:139]: Test: Loss = 622.1544647216797 / 192 = 3.2403878370920816
+[[31;21mINFO[1;0m]11-22 08:54:48 - runner.py[line:74]: Test on Client 5.
+[[31;21mINFO[1;0m]11-22 08:54:49 - server.py[line:138]: Test: Acc = 58 / 160 = 0.3625
+[[31;21mINFO[1;0m]11-22 08:54:49 - server.py[line:139]: Test: Loss = 473.7935256958008 / 160 = 2.961209535598755
+[[31;21mINFO[1;0m]11-22 08:54:49 - runner.py[line:74]: Test on Client 6.
+[[31;21mINFO[1;0m]11-22 08:54:49 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:54:49 - server.py[line:139]: Test: Loss = 600.5760192871094 / 192 = 3.128000100453695
+[[31;21mINFO[1;0m]11-22 08:54:49 - runner.py[line:74]: Test on Client 7.
+[[31;21mINFO[1;0m]11-22 08:54:50 - server.py[line:138]: Test: Acc = 42 / 160 = 0.2625
+[[31;21mINFO[1;0m]11-22 08:54:50 - server.py[line:139]: Test: Loss = 510.52198791503906 / 160 = 3.190762424468994
+[[31;21mINFO[1;0m]11-22 08:54:50 - runner.py[line:74]: Test on Client 8.
+[[31;21mINFO[1;0m]11-22 08:54:51 - server.py[line:138]: Test: Acc = 44 / 192 = 0.22916666666666666
+[[31;21mINFO[1;0m]11-22 08:54:51 - server.py[line:139]: Test: Loss = 647.569465637207 / 192 = 3.37275763352712
+[[31;21mINFO[1;0m]11-22 08:54:51 - runner.py[line:74]: Test on Client 9.
+[[31;21mINFO[1;0m]11-22 08:54:51 - server.py[line:138]: Test: Acc = 50 / 192 = 0.2604166666666667
+[[31;21mINFO[1;0m]11-22 08:54:51 - server.py[line:139]: Test: Loss = 674.5427398681641 / 192 = 3.5132434368133545
+[[31;21mINFO[1;0m]11-22 08:54:51 - runner.py[line:74]: Test on Client 10.
+[[31;21mINFO[1;0m]11-22 08:54:52 - server.py[line:138]: Test: Acc = 61 / 192 = 0.3177083333333333
+[[31;21mINFO[1;0m]11-22 08:54:52 - server.py[line:139]: Test: Loss = 631.7472381591797 / 192 = 3.2903501987457275
+[[31;21mINFO[1;0m]11-22 08:54:52 - runner.py[line:74]: Test on Client 11.
+[[31;21mINFO[1;0m]11-22 08:54:52 - server.py[line:138]: Test: Acc = 55 / 160 = 0.34375
+[[31;21mINFO[1;0m]11-22 08:54:52 - server.py[line:139]: Test: Loss = 490.6398239135742 / 160 = 3.066498899459839

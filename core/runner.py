@@ -43,15 +43,18 @@ class Runner:
             c_feature = client.inference(train_data[client.id])
             logging.debug(f"Client {client.id} c_feature size: {len(c_feature)}.")
             c_features += c_feature
+            if self.args.visualize == True:
+                visualize_features(c_feature, self.args.results_dir + 'features_' + str(task_id) + '_client_' + str(client.id) + '.png', self.args.random_seed)
         
         # visualize features
-        visualize_features(c_features, self.args.results_dir + 'features_' + str(task_id) + '.png', self.args.random_seed)
+        if self.args.visualize == True:
+            visualize_features(c_features, self.args.results_dir + 'features_' + str(task_id) + '.png', self.args.random_seed)
         
         # pass this round's features to server
         logging.info("Pass Features to Server.")
         if coreset == True:
             # coreset
-            coreset = self.distill(c_features, 100)
+            coreset = self.distill(c_features, self.args.num_prototypes)
             visualize_features(coreset, self.args.results_dir + 'coreset_' + str(task_id) + '.png', self.args.random_seed)
 
             self.server.set_features(coreset)
@@ -68,8 +71,8 @@ class Runner:
 
         # test server
         logging.info("Test on Server.")
-        for task_id in range(len(test_data_dict)):
-            logging.info(f"Test on Task f{task_id}.")
+        for task_id in range(task_id + 1):
+            logging.info(f"Test on Task {task_id}.")
             for client_id in range(self.args.num_clients):
-                logging.info(f"Test on Client f{client_id}.")
+                logging.info(f"Test on Client {client_id}.")
                 self.server.test(test_data_dict[task_id][client_id])
