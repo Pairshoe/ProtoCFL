@@ -2,6 +2,9 @@ import random
 import logging
 
 import torch
+import torchvision
+import torchvision.transforms as transforms
+
 import numpy as np
 
 from argument import load_arguments

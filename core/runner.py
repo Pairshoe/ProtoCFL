@@ -1,6 +1,5 @@
 import logging
 import torch
-import numpy as np
 from collections import defaultdict
 
 from utils import visualize_features

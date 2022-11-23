@@ -1,4 +1,5 @@
 import torch
+import torch.nn.functional as F
 
 class Client():
     def __init__(self, args, device, model):
@@ -25,6 +26,8 @@ class Client():
             features = []
             for (x, labels) in train_data:
                 x, labels = x.to(self.device), labels.to(self.device)
+                x = F.interpolate(x, [224, 224])
+                
                 feat = model(x)
                 for id in range(len(labels)):
                     features.append([feat[id].cpu(), labels[id].cpu()])

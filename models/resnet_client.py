@@ -18,13 +18,9 @@ class ResNet18_Client(nn.Module):
             if num_classes == 10:
                 self.base = resnet18(pretrained=pretained)
             elif num_classes == 100:
-                # self.base = torch.load('/home/pairshoe/ProtoCFL/models/resnet-pre-cifar100.ckpt')
-                model = models.resnet18(pretrained=True)
-                model.load_state_dict(torch.load('/home/pairshoe/ProtoCFL/models/Train-ResNet-on-CIFAR100/resnet18-5c106cde.pth'))
-                self.base = model
+                self.base = torch.load('/home/pairshoe/ProtoCFL/models/pre-encoder-cifar100.ckpt')
             else:
                 logging.info("Unsupport num_classes")
-            # self.base = resnet18(pretrained=pretained)
         else:
             logging.info("No Pretrained")
             self.base = models.resnet18()

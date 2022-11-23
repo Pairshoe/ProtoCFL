@@ -5,6 +5,7 @@ from collections import defaultdict
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
 
@@ -125,6 +126,8 @@ class Server():
         with torch.no_grad():
             for batch_idx, (x, target) in enumerate(test_data):
                 x, target = x.to(self.device), target.to(self.device)
+                x = F.interpolate(x, [224, 224])
+
                 feat = encoder(x)
                 pred = model(feat)
                 loss = criterion(pred, target)
